@@ -9,7 +9,4 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
 }

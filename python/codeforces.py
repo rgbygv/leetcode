@@ -11,6 +11,7 @@ MOD = 10**9 + 7
 
 def main():
     n = int(input())
+    a = list(read_ints())
 
 
 def input():
