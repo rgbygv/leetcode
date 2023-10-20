@@ -1,0 +1,15 @@
+input:
+1000
+35
+700
+300
+output:
+"Heavy"
+
+input:
+200
+50
+800
+50
+output:
+"Neither"
