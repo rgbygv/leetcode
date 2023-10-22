@@ -7,5 +7,5 @@ leetcode:
   site: https://leetcode.cn
 credentials:
    from: cookies
-#editor:
-#  use: none
+editor:
+ use: vscode
