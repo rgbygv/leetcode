@@ -1,0 +1,14 @@
+input:
+"1001"
+output:
+2
+
+input:
+"10"
+output:
+1
+
+input:
+"0000"
+output:
+0
