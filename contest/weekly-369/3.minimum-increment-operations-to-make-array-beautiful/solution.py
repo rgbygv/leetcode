@@ -35,14 +35,12 @@ class Solution:
                 return max(0, k - nums[i]) + dfs(i + 1, 0)
             # increase
             op1 = max(0, k - nums[i]) + dfs(i + 1, 0)
-
             # dont increase
-            op2 = max(0, k - nums[i - 1]) + dfs(i + 1, 1)
-            op3 = max(0, k - nums[i - 2]) + dfs(i + 1, 2)
+            op2 = dfs(i + 1, j + 1)
 
-            return min(op1, op2, op3)
+            return min(op1, op2)
 
-        return dfs(0, 2)
+        return dfs(0, 0)
 
 
 # @lc code=end
