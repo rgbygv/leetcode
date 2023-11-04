@@ -29,8 +29,6 @@ class Solution:
                 res.append("Push")
                 res.append("Pop")
                 i += 1
-                if i == n + 1:
-                    i = 1
             res.append("Push")
             i += 1
         return res
