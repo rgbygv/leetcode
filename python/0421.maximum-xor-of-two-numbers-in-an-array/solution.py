@@ -20,55 +20,21 @@ from typing import List, Optional
 # from sortedcontainers import SortedList
 
 
-class Trie:
-    L = 31
-
-    def __init__(self):
-        self.left = self.right = None
-
-    def insert(self, x):
-        node = self
-        for i in range(Trie.L)[::-1]:
-            bit = x >> i & 1
-            if bit == 0:
-                if not node.left:
-                    node.left = Trie()
-                node = node.left
-            else:
-                if not node.right:
-                    node.right = Trie()
-                node = node.right
-
-    def search(self, x):
-        res = 0
-        node = self
-        for i in range(Trie.L)[::-1]:
-            bit = x >> i & 1
-            check = False
-            if bit == 0:
-                if node.right:
-                    node = node.right
-                    check = True
-                else:
-                    node = node.left
-            else:
-                if node.left:
-                    node = node.left
-                    check = True
-                else:
-                    node = node.right
-            if check:
-                res |= 1 << i
-        return res
-
-
 class Solution:
     def findMaximumXOR(self, nums: List[int]) -> int:
-        trie = Trie()
         res = 0
-        for x in sorted(nums, reverse=True):
-            trie.insert(x)
-            res = max(res, trie.search(x))
+        N = max(nums).bit_length()
+        mask = 0
+        for i in range(N, -1, -1):
+            mask |= 1 << i
+            new = res | (1 << i)
+            seen = set()
+            for x in nums:
+                x &= mask
+                if new ^ x in seen:
+                    res = new
+                    break
+                seen.add(x)
         return res
 
 
