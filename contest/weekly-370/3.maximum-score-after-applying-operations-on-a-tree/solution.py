@@ -37,20 +37,21 @@ class Solution:
         def dfs(x, fa):
             op1 = values[x]
             op2 = 0
+            is_leaf = True
             for y in g[x]:
                 if y == fa:
                     continue
+                is_leaf = False
                 s1, s2 = dfs(y, x)
-                if min(s1, s2) != 0:
-                    op1 += max(s1, s2)
-                else:
-                    op1 += s2
-                op2 += max(s1, s2)
-            # print(x, op1, op2)
-            return op1, op2
+                op1 += s1
+                op2 += s2
+            if op2 == 0 and is_leaf:
+                op2 = -inf
+            # print(x, op1, max(values[x] + op2, op1 - values[x]))
+            return op1, max(values[x] + op2, op1 - values[x])
 
         op1, op2 = dfs(0, -1)
-        return max(op1, op2)
+        return op2
 
 
 # @lc code=end
