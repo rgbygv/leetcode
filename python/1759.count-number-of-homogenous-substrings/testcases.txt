@@ -1,0 +1,14 @@
+input:
+"abbcccaa"
+output:
+13
+
+input:
+"xy"
+output:
+2
+
+input:
+"zzzzz"
+output:
+15
