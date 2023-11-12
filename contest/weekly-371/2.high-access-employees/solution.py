@@ -31,14 +31,9 @@ class Solution:
         res = []
         for key in mp:
             v = sorted(mp[key])
-            if len(v) < 3:
-                continue
-            for i in range(len(v) - 2):
-                if v[i + 2] - v[i] < 60:
-                    res.append(key)
-                    break
-        # print(mp)
-        return sorted(res)
+            if any(v[i + 2] - v[i] < 60 for i in range(len(v) - 2)):
+                res.append(key)
+        return res
 
 
 # @lc code=end
