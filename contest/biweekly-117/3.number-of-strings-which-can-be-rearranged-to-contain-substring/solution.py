@@ -26,25 +26,15 @@ class Solution:
         mod = 10**9 + 7
         if n < 3:
             return 0
-        # must have leet
-        # other's any
-        # res = 12
-        # for i in range(5, n + 1):
-        #     res = res * i * 26 % mod
-        # return res
-        # aabb
 
-        # why not cant leet
-
+        # consider can't leet
         res = pow(26, n, mod)
-        less_l = less_t = pow(25, n, mod)
-        less_lt = pow(24, n, mod)
-        less_le = less_te = pow(24, n, mod) + n * pow(24, n - 1, mod)
-        less_lte = pow(23, n, mod) + n * pow(23, n - 1, mod)
-        less_e = less_l + n * pow(25, n - 1, mod)
-        return (
-            res - less_l - less_t - less_e + less_lt + less_le + less_te - less_lte
-        ) % mod
+        l = t = pow(25, n, mod)
+        e = l + n * pow(25, n - 1, mod)
+        lt = pow(24, n, mod)
+        le = te = pow(24, n, mod) + n * pow(24, n - 1, mod)
+        lte = pow(23, n, mod) + n * pow(23, n - 1, mod)
+        return (res - l - t - e + lt + le + te - lte) % mod
 
 
 # @lc code=end
