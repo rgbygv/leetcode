@@ -25,18 +25,18 @@ class Solution:
     def distributeCandies(self, n: int, limit: int) -> int:
         if n > limit * 3:
             return 0
-        if n == limit * 3:
-            return 1
-        res = 0
-        for a in range(min(n, limit) + 1):
-            bc = n - a
-            if bc <= limit:
-                res += bc + 1
-            elif bc <= 2 * limit:
-                # b <= limit
-                # bc - b <= limit => b >= bc - limit
-                res += limit - (bc - limit) + 1
-        return res
+
+        def comb2(a, b):
+            if a <= 0:
+                return 0
+            return comb(a, b)
+
+        # consider can't limit
+        all = comb2(n + 2, 2)
+        a = comb2(n + 2 - (limit + 1), 2)
+        b = comb2(n + 2 - 2 * (limit + 1), 2)
+        c = comb2(n + 2 - 3 * (limit + 1), 2)
+        return all - 3 * a + 3 * b - c
 
 
 # @lc code=end
