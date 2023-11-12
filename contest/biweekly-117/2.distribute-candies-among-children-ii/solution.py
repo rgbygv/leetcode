@@ -28,34 +28,14 @@ class Solution:
         if n == limit * 3:
             return 1
         res = 0
-        # a < b < c
-        for b in range(1, min(n + 1, limit)):
-            # c > b
-            # 0 <= n - b -c < b
-            # c > n-2b
-            # c <= limit
-            # c <= n -b
-            res += 6 * max(min(limit, n - b) - max(b, n - 2 * b), 0)
-
-        # print(res)
-        # a == b < c
-        for b in range(0, min(n + 1, limit)):
-            if b < n - 2 * b <= limit:
-                res += 3
-        # print(res)
-
-        # a < b == c
-        for b in range(0, min(n // 2, limit) + 1):
-            # n - 2 * b >= 0
-            # b <= n / 2
-            if not (n - 2 * b >= 0):
-                break
-            if n - 2 * b < b:
-                res += 3
-        # print(res)
-        # a == b == c
-        if n % 3 == 0:
-            res += 1
+        for a in range(min(n, limit) + 1):
+            bc = n - a
+            if bc <= limit:
+                res += bc + 1
+            elif bc <= 2 * limit:
+                # b <= limit
+                # bc - b <= limit => b >= bc - limit
+                res += limit - (bc - limit) + 1
         return res
 
 
