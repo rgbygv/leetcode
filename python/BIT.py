@@ -5,7 +5,7 @@ class BIT:
     def lowbit(self, x: int):
         return x & -x
 
-    def update(self, x: int, d=1):
+    def update(self, x: int, d: int):
         while x < len(self.q):
             self.q[x] += d
             x += self.lowbit(x)
@@ -16,7 +16,8 @@ class BIT:
             res += self.q[x]
             x -= self.lowbit(x)
         return res
-    
+
+
 # class BIT:
 #     def __init__(self, n: int) -> None:
 #         self.n = n + 1
@@ -38,4 +39,3 @@ class BIT:
 #                 res = self.q[x]
 #             x -= self.lowbit(x)
 #         return res
-
