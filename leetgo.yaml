@@ -5,7 +5,8 @@ code:
   lang: python
 leetcode:
   site: https://leetcode.cn
-credentials:
-   from: cookies
 editor:
- use: vscode
+  use: custom
+  command: "code"
+  args: "{{.CodeFile}} {{.DescriptionFile}}"
+
