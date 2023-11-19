@@ -34,7 +34,7 @@ class Solution:
         ps = sum(nums[: k - 1])
         pre = []
         s = sum(nums[k : 2 * k - 1])
-        key = 
+        key = 0
         val = None
         # print(suf)
 
