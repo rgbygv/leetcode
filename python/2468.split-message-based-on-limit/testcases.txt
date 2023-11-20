@@ -1,0 +1,17 @@
+input:
+"this is really a very awesome message"
+9
+output:
+["thi<1/14>","s i<2/14>","s r<3/14>","eal<4/14>","ly <5/14>","a v<6/14>","ery<7/14>"," aw<8/14>","eso<9/14>","me<10/14>"," m<11/14>","es<12/14>","sa<13/14>","ge<14/14>"]
+
+input:
+"short message"
+15
+output:
+["short mess<1/2>","age<2/2>"]
+
+input:
+"abbababbbaaa aabaa a"
+8
+output:
+["abb<1/7>","aba<2/7>","bbb<3/7>","aaa<4/7>"," aa<5/7>","baa<6/7>"," a<7/7>"]
