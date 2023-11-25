@@ -37,13 +37,13 @@ class Solution:
             if not o:
                 return
             nonlocal res
-            cnt[o.val] += 1
+            cnt[o.val] ^= 1
             if not o.left and not o.right:
-                res += sum(x & 1 for x in cnt) <= 1
+                res += sum(cnt) <= 1
             else:
                 dfs(o.left)
                 dfs(o.right)
-            cnt[o.val] -= 1
+            cnt[o.val] ^= 1
 
         dfs(root)
 
