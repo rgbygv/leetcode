@@ -1,0 +1,17 @@
+input:
+["leet","code"]
+"e"
+output:
+[0,1]
+
+input:
+["abc","bcd","aaaa","cbc"]
+"a"
+output:
+[0,2]
+
+input:
+["abc","bcd","aaaa","cbc"]
+"z"
+output:
+[]
