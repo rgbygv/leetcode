@@ -23,29 +23,23 @@ from typing import List, Optional
 
 class Solution:
     def beautifulSubstrings(self, s: str, k: int) -> int:
-        k *= 2
-        f = [False] * (k + 1)
-        f[0] = True
-        for i in range(1, k + 1):
-            f[i] = i * i % k == 0
+        # (L/2) ** 2 % k == 0
+        L = None
+        for d in count(1):
+            if d * d % (4 * k) == 0:
+                L = d
+                break
+        assert L is not None
 
-        s = [ch in "aeiou" for ch in s]
+        s = [1 if ch in "aeiou" else -1 for ch in s]
+        p = list(accumulate(s, initial=0))
 
-        # s[i..j] = 0 and (i-j)//2 ** 2 % k == 0
-
-        ss = 0
         res = 0
-        pre = defaultdict(lambda: defaultdict(int))
-        if k == 1:
-            pre[0][-1] = 1
-        for i, ch in enumerate(s):
-            x = 1 if ch else -1
-            ss += x
-            for j, c in pre[ss].items():
-                if f[abs(i % k - j)]:
-                    print(i, abs(i % k - j), pre[ss])
-                    res += c
-            pre[ss][i % k] += 1
+        cnt = Counter()
+        for i, s in enumerate(p):
+            p = (s, i % L)
+            res += cnt[p]
+            cnt[p] += 1
 
         return res
 
