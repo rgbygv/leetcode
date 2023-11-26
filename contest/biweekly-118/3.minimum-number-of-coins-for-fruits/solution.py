@@ -27,11 +27,10 @@ class Solution:
 
         @cache
         def dfs(i: int, rest: int):
-            if i == n:
+            if rest >= n - i:
                 return 0
             if rest == 0:
                 return prices[i] + dfs(i + 1, i + 1)
-
             return min(dfs(i + 1, rest - 1), prices[i] + dfs(i + 1, i + 1))
 
         return dfs(0, 0)
