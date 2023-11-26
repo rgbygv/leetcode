@@ -8,5 +8,5 @@ leetcode:
 editor:
   use: custom
   command: "code"
-  args: "{{.CodeFile}} {{.DescriptionFile}}"
+  args: "{{.DescriptionFile}} {{.CodeFile}}"
 
