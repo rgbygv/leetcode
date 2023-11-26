@@ -1,0 +1,17 @@
+input:
+"baeyh"
+2
+output:
+2
+
+input:
+"abba"
+1
+output:
+3
+
+input:
+"bcdf"
+1
+output:
+0
