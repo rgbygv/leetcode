@@ -23,21 +23,19 @@ from typing import List, Optional
 
 class Solution:
     def areSimilar(self, mat: List[List[int]], k: int) -> bool:
-        m = len(mat)
         n = len(mat[0])
+        k %= n
+        if k == 0:
+            return True
 
-        res = [[0] * n for _ in range(m)]
-
-        for i in range(m):
-            for j in range(n):
-                if i & 1:
-                    res[i][(j + k) % n] = mat[i][j]
-                else:
-                    # print(i, (j - k) % n)
-                    res[i][(j - k) % n] = mat[i][j]
-            # print(res[i])
-            if res[i] != mat[i]:
+        for i, row in enumerate(mat):
+            if i & 1 == 0:
+                tmp = row[k:] + row[:k]
+            else:
+                tmp = row[-k:] + row[:-k]
+            if tmp != row:
                 return False
+
         return True
 
 
