@@ -25,24 +25,38 @@ class Solution:
     def maximizeSquareHoleArea(
         self, n: int, m: int, hBars: List[int], vBars: List[int]
     ) -> int:
-        h = [1] + sorted(hBars) + [n + 2]
-        v = [1] + sorted(vBars) + [m + 2]
+        def f(v):
+            n = len(v)
+            i = 0
+            res = 1
+            while i < n:
+                j = i + 1
+                while j < n and v[j] - v[j - 1] == 1:
+                    j += 1
+                res = max(res, j - i)
+                i = j
+            return res + 1
 
-        # print(h, v)
-        res = 0
-        s = set()
-        for r, x in enumerate(h):
-            for l in range(r):
-                size = x - h[l]
-                s.add(size)
+        return min(f(sorted(hBars)), f(sorted(vBars))) ** 2
 
-        # print(s)
-        for r, x in enumerate(v):
-            for l in range(r):
-                size = x - v[l]
-                if size in s:
-                    res = max(res, size**2)
-        return res
+        # h = [1] + sorted(hBars) + [n + 2]
+        # v = [1] + sorted(vBars) + [m + 2]
+
+        # # print(h, v)
+        # res = 0
+        # s = set()
+        # for r, x in enumerate(h):
+        #     for l in range(r):
+        #         size = x - h[l]
+        #         s.add(size)
+
+        # # print(s)
+        # for r, x in enumerate(v):
+        #     for l in range(r):
+        #         size = x - v[l]
+        #         if size in s:
+        #             res = max(res, size**2)
+        # return res
 
 
 # @lc code=end
