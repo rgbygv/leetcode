@@ -26,52 +26,51 @@ class Solution:
         n = len(nums)
         p = list(accumulate(nums, initial=0))
         # greedy
-        i = 0
-        res = 0
-        last = 0
-        while i < n:
-            if nums[i] >= last:
-                res += 1
-                last = nums[i]
-                i += 1
-            else:
-                if p[-1] - p[i] < last:
-                    break
-                j = bisect_left(p, last + p[i])
-                print(i, j, last, p[j] - p[i])
-                left = p[i]
-                while p[j] - p[i] >= last + p[i] - left:
-                    i += 1
-                print(i, j, last, p[j] - p[i])
-                last = p[j] - p[i - 1]
-                res += 1
-                i = j
-        return res
+        # i = 0
+        # res = 0
+        # last = 0
+        # while i < n:
+        #     if nums[i] >= last:
+        #         res += 1
+        #         last = nums[i]
+        #         i += 1
+        #     else:
+        #         if p[-1] - p[i] < last:
+        #             break
+        #         j = bisect_left(p, last + p[i])
+        #         print(i, j, last, p[j] - p[i])
+        #         left = p[i]
+        #         while p[j] - p[i] >= last + p[i] - left:
+        #             i += 1
+        #         print(i, j, last, p[j] - p[i])
+        #         last = p[j] - p[i - 1]
+        #         res += 1
+        #         i = j
+        # return res
 
+        # @cache
+        # def dfs(i: int, last: int):
+        #     if i == n:
+        #         return 0
+        #     if nums[i] >= last:
+        #         return 1 + dfs(i + 1, nums[i])
+        #     # a[i..j] >= last
+        #     # p[j] - p[i] >= last
+        #     if p[-1] - p[i] < last:
+        #         return 0
+        #     j = bisect_left(p, last + p[i])
+        #     # print(i, last, j, p[j] - p[i])
+        #     return max(
+        #         dfs(i + 1, last + nums[i]),
+        #         1 + dfs(j, p[j] - p[i]),
+        #     )
 
-"""         @cache
-        def dfs(i: int, last: int):
-            if i == n:
-                return 0
-            if nums[i] >= last:
-                return 1 + dfs(i + 1, nums[i])
-            # a[i..j] >= last
-            # p[j] - p[i] >= last
-            if p[-1] - p[i] < last:
-                return 0
-            j = bisect_left(p, last + p[i])
-            # print(i, last, j, p[j] - p[i])
-            return max(
-                dfs(i + 1, last + nums[i]),
-                1 + dfs(j, p[j] - p[i]),
-            )
+        # res = dfs(0, 0)
+        # dfs.cache_clear()
+        # if res == -inf:
+        #     return 1
+        # return res
 
-        res = dfs(0, 0)
-        dfs.cache_clear()
-        if res == -inf:
-            return 1
-        return res
- """
 
 # @lc code=end
 
