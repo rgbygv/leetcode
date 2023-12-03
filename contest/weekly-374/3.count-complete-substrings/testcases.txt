@@ -1,0 +1,11 @@
+input:
+"igigee"
+2
+output:
+3
+
+input:
+"aaabbbccc"
+3
+output:
+6
