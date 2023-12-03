@@ -19,14 +19,29 @@ from typing import List, Optional
 
 # @lc code=begin
 # from sortedcontainers import SortedList
+mod = 10**9 + 7
+
+N = 10**5 + 1
+f = [1] * N
+for i in range(1, N):
+    f[i] = i * f[i - 1] % mod
+
+
+def inv(x):
+    return pow(x, mod - 2, mod)
+
+
+def my_comb(x, y):
+    # f(x..x-y) / f(y..0)
+    return f[x] * inv(f[x - y]) % mod * inv(f[y]) % mod
 
 
 class Solution:
     def numberOfSequence(self, n: int, sick: List[int]) -> int:
-        mod = 10**9 + 7
         left = sick[0] - 0
         right = n - 1 - sick[-1]
         p = []
+        s = n - len(sick)
 
         for a in (left, right):
             if a != 0:
@@ -36,21 +51,13 @@ class Solution:
             a = y - x - 1
             if a != 0:
                 p.append((a, True))
-            # res = res * (pow(2, a - 1, mod)) % mod
         res = 1
-        p.sort()
-
-        if p:
-            res = p.pop()[0] + 1
-        ok = False
         for x, t in p:
             if t:
-                ok = True
-                res = res * (pow(2, x - 1, mod)) % mod
+                res = my_comb(s, x) * res * (pow(2, x - 1, mod)) % mod
             else:
-                res = res * x % mod
-        if len(p) == 0 and not ok:
-            return 1
+                res = my_comb(s, x) * res % mod
+            s -= x
         return (res) % mod
 
 
