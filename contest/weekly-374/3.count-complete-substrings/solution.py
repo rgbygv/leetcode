@@ -20,16 +20,39 @@ from typing import List, Optional
 # @lc code=begin
 # from sortedcontainers import SortedList
 
+
 class Solution:
     def countCompleteSubstrings(self, word: str, k: int) -> int:
-        cnt = Counter()
-        @cache
-        def check(a,b):
-            return abs(ord(a) - ord(b)) <= 2
-        for c
-        
-        
+        a = [ord(ch) - ord("a") for ch in word]
 
+        def f(v):
+            res = 0
+            n = len(v)
+            for i in range(1, 27):
+                if k * i > n:
+                    break
+                m = k * i
+                cnt = [0] * 26
+                for j in range(m - 1):
+                    cnt[v[j]] += 1
+                for j in range(m - 1, n):
+                    cnt[v[j]] += 1
+                    if all(x == 0 or x == k for x in cnt):
+                        res += 1
+                    cnt[v[j - (m - 1)]] -= 1
+
+            return res
+
+        i = 0
+        n = len(a)
+        res = 0
+        while i < n:
+            j = i + 1
+            while j < n and abs(a[j] - a[j - 1]) <= 2:
+                j += 1
+            res += f(a[i:j])
+            i = j
+        return res
 
 
 # @lc code=end
