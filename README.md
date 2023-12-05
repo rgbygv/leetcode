@@ -9,3 +9,7 @@
 - [1038. 从二叉搜索树到更大和树][link] (Medium)
 
 [link]: https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/
+
+- [2477. 到达首都的最少油耗][link] (Medium)
+
+[link]: https://leetcode.cn/problems/minimum-fuel-cost-to-report-to-the-capital/
