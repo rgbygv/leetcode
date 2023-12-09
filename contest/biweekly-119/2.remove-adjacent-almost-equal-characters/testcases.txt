@@ -1,0 +1,14 @@
+input:
+"aaaaa"
+output:
+2
+
+input:
+"abddez"
+output:
+2
+
+input:
+"zyxyxyz"
+output:
+3
