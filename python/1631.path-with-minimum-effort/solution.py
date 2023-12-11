@@ -30,15 +30,14 @@ class Solution:
             mid = (l + r) >> 1
 
             def check(mid):
-                vis = [[False] * n for _ in range(m)]
-                q = deque([(0, 0)])
-                while q:
-                    x, y = q.popleft()
+                vis = set()
+
+                def dfs(x, y):
                     if x == m - 1 and y == n - 1:
                         return True
-                    if vis[x][y]:
-                        continue
-                    vis[x][y] = True
+                    if (x, y) in vis:
+                        return False
+                    vis.add((x,y))
                     for dx, dy in [(0, 1), (0, -1), (-1, 0), (1, 0)]:
                         nx, ny = x + dx, y + dy
                         if (
@@ -46,9 +45,11 @@ class Solution:
                             and 0 <= ny < n
                             and abs(heights[nx][ny] - heights[x][y]) <= mid
                         ):
-                            q.append((nx, ny))
+                            if dfs(nx, ny):
+                                return True
+                    return False
 
-                return False
+                return dfs(0, 0)
 
             if check(mid):
                 r = mid
