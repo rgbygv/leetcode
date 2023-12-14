@@ -6,6 +6,10 @@
 
 [link]: https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/
 
+- [2132. 用邮票贴满网格图][link] (Hard)
+
+[link]: https://leetcode.cn/problems/stamping-the-grid/
+
 - [2454. 下一个更大元素 IV][link] (Hard)
 
 [link]: https://leetcode.cn/problems/next-greater-element-iv/
