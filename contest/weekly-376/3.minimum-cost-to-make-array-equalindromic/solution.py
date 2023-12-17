@@ -52,13 +52,17 @@ class Solution:
         p = list(accumulate(nums, initial=0))
         n = len(nums)
 
-        i = bisect_left(pre, nums[n >> 1])
-
         def cal(x):
             i = bisect_left(nums, x)  # a[i] >= x
             return x * (i) - p[i] + (p[-1] - p[i] - (n - i) * x)
 
-        return min(cal(pre[x]) for x in range(max(0, i - 2), min(len(pre), i + 3)))
+        i = bisect_left(pre, nums[n >> 1])
+        res = cal(pre[i])
+        if i > 0:
+            res = min(res, cal(pre[i - 1]))
+        if i + 1 < len(pre):
+            res = min(res, cal(pre[i + 1]))
+        return res
 
 
 # @lc code=end
