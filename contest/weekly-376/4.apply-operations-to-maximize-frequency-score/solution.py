@@ -44,8 +44,8 @@ class Solution:
                     for m in tmp:
                         cur = (
                             nums[m] * (m - left)
-                            - (p[m + 1] - p[left])  # sum(nums[left:m])
-                            + (p[right + 1] - p[m])  # sum(nums[m + 1 : right + 1])
+                            - (p[m] - p[left])  # sum(nums[left:m])
+                            + (p[right + 1] - p[m + 1])  # sum(nums[m + 1 : right + 1])
                             - nums[m] * (right - m)
                         )
                         if cur <= k:
