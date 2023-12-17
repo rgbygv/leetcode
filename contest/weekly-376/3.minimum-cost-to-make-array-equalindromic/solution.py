@@ -21,45 +21,44 @@ from typing import List, Optional
 # from sortedcontainers import SortedList
 
 
+def helper():
+    res = []
+    for left in range(10**5):
+        tmp = left
+        x = left
+        while tmp:
+            x = x * 10 + tmp % 10
+            tmp //= 10
+        res.append(x)
+
+        if left < 10**4:
+            for mid in range(10):
+                x = left * 10 + mid
+                tmp = left
+                while tmp:
+                    x = x * 10 + tmp % 10
+                    tmp //= 10
+                res.append(x)
+    return sorted(res)
+
+
+pre = helper()
+
+
 class Solution:
     def minimumCost(self, nums: List[int]) -> int:
         nums.sort()
 
         p = list(accumulate(nums, initial=0))
         n = len(nums)
-        res = inf
-        flg = False
 
-        for left in range(10 ** (len(str(nums[-1])) // 2 + 1)):
-            if flg:
-                break
-            tmp = left
-            x = left
-            while tmp:
-                x = x * 10 + tmp % 10
-                tmp //= 10
+        i = bisect_left(pre, nums[n >> 1])
 
-            def cal(x):
-                i = bisect_left(nums, x)  # a[i] >= x
-                return x * (i) - p[i] + (p[-1] - p[i] - (n - i) * x)
+        def cal(x):
+            i = bisect_left(nums, x)  # a[i] >= x
+            return x * (i) - p[i] + (p[-1] - p[i] - (n - i) * x)
 
-            # print(x, cal(x))
-
-            res = min(res, cal(x))
-            if x > nums[-1] and res != inf:
-                flg = True
-            if left < 10**4:
-                for mid in range(10):
-                    x = left * 10 + mid
-                    tmp = left
-                    while tmp:
-                        x = x * 10 + tmp % 10
-                        tmp //= 10
-
-                    # print(x, cal(x))
-                    res = min(res, cal(x))
-
-        return res
+        return min(cal(pre[x]) for x in range(max(0, i - 2), min(len(pre), i + 3)))
 
 
 # @lc code=end
