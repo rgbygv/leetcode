@@ -2,6 +2,10 @@
 
 ## Challenging Problem
 
+- [0162. 寻找峰值][link] (Medium)
+
+[link]: https://leetcode.cn/problems/find-peak-element/
+
 - [1038. 从二叉搜索树到更大和树][link] (Medium)
 
 [link]: https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/
