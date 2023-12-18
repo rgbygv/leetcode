@@ -2,6 +2,10 @@
 
 ## Challenging Problem
 
+- [0113. 路径总和 II][link] (Medium)
+
+[link]: https://leetcode.cn/problems/path-sum-ii/
+
 - [0162. 寻找峰值][link] (Medium)
 
 [link]: https://leetcode.cn/problems/find-peak-element/
