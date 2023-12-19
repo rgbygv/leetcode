@@ -14,6 +14,10 @@
 
 [link]: https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/
 
+- [1901. 寻找峰值 II][link] (Medium)
+
+[link]: https://leetcode.cn/problems/find-a-peak-element-ii/
+
 - [2132. 用邮票贴满网格图][link] (Hard)
 
 [link]: https://leetcode.cn/problems/stamping-the-grid/
