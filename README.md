@@ -10,6 +10,10 @@
 
 [link]: https://leetcode.cn/problems/find-peak-element/
 
+- [0324. 摆动排序 II][link] (Medium)
+
+[link]: https://leetcode.cn/problems/wiggle-sort-ii/
+
 - [1038. 从二叉搜索树到更大和树][link] (Medium)
 
 [link]: https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/
