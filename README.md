@@ -34,6 +34,10 @@
 
 [link]: https://leetcode.cn/problems/minimize-the-total-price-of-the-trips/
 
+- [2866. 美丽塔 II][link] (Medium)
+
+[link]: https://leetcode.cn/problems/beautiful-towers-ii/
+
 - [2949. 统计美丽子字符串 II][link] (Hard)
 
 [link]: https://leetcode.cn/contest/weekly-contest-373/problems/count-beautiful-substrings-ii/
