@@ -22,32 +22,33 @@ from typing import List, Optional
 
 class Solution:
     def minimumMountainRemovals(self, nums: List[int]) -> int:
-        def LIS(l: int, r: int):
-            # longest increase sub array
+        n = len(nums)
+
+        def LIS():
+            pre = [0] * n
             q = []
-            for i in range(l, r + 1) if l < r else range(l, r - 1, -1):
-                x = nums[i]
-                if not q or x > q[-1]:
+            for i, x in enumerate(nums):
+                j = bisect_left(q, x)
+                pre[i] = j + 1
+                if j >= len(q):
                     q.append(x)
                 else:
-                    j = bisect_left(q, x)
                     q[j] = x
-            return q
+            return pre
 
+        pre = LIS()
+        q = []
         res = 0
-        n = len(nums)
-        for i in range(1, n - 1):
-            # if i as top
-            # find the longest up array
-            left = LIS(0, i)
-            right = LIS(n - 1, i)
-            if min(len(left), len(right)) <= 1:
-                continue
-            # print(i, left, right)
-            if left[-1] == right[-1]:
-                res = max(res, len(left) + len(right) - 1)
+        for i in range(n - 1, -1, -1):
+            x = nums[i]
+            j = bisect_left(q, x)
+            suf = j + 1
+            if suf >= 2 and pre[i] >= 2:
+                res = max(res, suf + pre[i] - 1)
+            if j >= len(q):
+                q.append(x)
             else:
-                res = max(res, len(left) + len(right))
+                q[j] = x
         return n - res
 
 
