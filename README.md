@@ -49,3 +49,7 @@
 - [100141. 树中每个节点放置的金币数目][link] (Hard)
 
 [link]: https://leetcode.cn/contest/biweekly-contest-120/problems/find-number-of-coins-to-place-in-tree-nodes/
+
+- [100167. 统计移除递增子数组的数目 II][link] (Medium)
+
+[link]: https://leetcode.cn/contest/biweekly-contest-120/problems/count-the-number-of-incremovable-subarrays-ii/
