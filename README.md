@@ -45,3 +45,7 @@
 - [2949. 统计美丽子字符串 II][link] (Hard)
 
 [link]: https://leetcode.cn/contest/weekly-contest-373/problems/count-beautiful-substrings-ii/
+
+- [100141. 树中每个节点放置的金币数目][link] (Hard)
+
+[link]: https://leetcode.cn/contest/biweekly-contest-120/problems/find-number-of-coins-to-place-in-tree-nodes/
