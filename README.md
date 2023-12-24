@@ -22,6 +22,10 @@
 
 [link]: https://leetcode.cn/problems/find-a-peak-element-ii/
 
+- [1954. 收集足够苹果的最小花园周长][link] (Medium)
+
+[link]: https://leetcode.cn/problems/minimum-garden-perimeter-to-collect-enough-apples/
+
 - [2132. 用邮票贴满网格图][link] (Hard)
 
 [link]: https://leetcode.cn/problems/stamping-the-grid/
