@@ -3,25 +3,26 @@
 language: zh
 code:
   lang: python
-  python3:
-  out_dir: python
-  # Python executable that creates the venv
-  executable: python3
-  filename_template: ""
-  blocks:
-  - name: beforeMarker
-    template: |
 
-      from bisect import bisect_left, bisect_right
-      from collections import Counter, defaultdict, deque
-      from copy import deepcopy
-      from functools import cache, cmp_to_key, lru_cache, reduce
-      from heapq import heapify, heappop, heappush, heappushpop, heapreplace
-      from itertools import accumulate, chain, count, pairwise, zip_longest
-      from math import ceil, comb, floor, gcd, inf, isqrt, log2, perm, sqrt
-      from operator import xor
-      from string import ascii_lowercase
-      from typing import List, Optional
+  python3:
+    out_dir: python
+    # Python executable that creates the venv
+    executable: python3
+    filename_template: ""
+    blocks:
+    - name: beforeMarker
+      template: |
+
+        from bisect import bisect_left, bisect_right
+        from collections import Counter, defaultdict, deque
+        from copy import deepcopy
+        from functools import cache, cmp_to_key, lru_cache, reduce
+        from heapq import heapify, heappop, heappush, heappushpop, heapreplace
+        from itertools import accumulate, chain, count, pairwise, zip_longest
+        from math import ceil, comb, floor, gcd, inf, isqrt, log2, perm, sqrt
+        from operator import xor
+        from string import ascii_lowercase
+        from typing import List, Optional
 leetcode:
   site: https://leetcode.cn
   credentials:
