@@ -46,6 +46,10 @@
 
 [link]: https://leetcode.cn/problems/minimize-the-total-price-of-the-trips/
 
+- [2735. 收集巧克力][link] (Medium)
+
+[link]: https://leetcode.cn/problems/collecting-chocolates/
+
 - [2866. 美丽塔 II][link] (Medium)
 
 [link]: https://leetcode.cn/problems/beautiful-towers-ii/
