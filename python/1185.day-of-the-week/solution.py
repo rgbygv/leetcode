@@ -22,15 +22,19 @@ from typing import List, Optional
 class Solution:
     def dayOfTheWeek(self, day: int, month: int, year: int) -> str:
         # - 给出的日期一定是在 `1971` 到 `2100` 年之间的有效日期。
+        from datetime import datetime
+
         p = [
-            "Sunday",
             "Monday",
             "Tuesday",
             "Wednesday",
             "Thursday",
             "Friday",
             "Saturday",
+            "Sunday",
         ]
+        return p[datetime.weekday(datetime(year, month, day))]
+
         days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
         def ok(year: int):
