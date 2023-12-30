@@ -18,6 +18,10 @@
 
 [link]: https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/
 
+- [1185. 一周中的第几天][link] (Easy)
+
+[link]: https://leetcode.cn/problems/day-of-the-week/
+
 - [1349. 参加考试的最大学生数][link] (Hard)
 
 [link]: https://leetcode.cn/problems/maximum-students-taking-exam/
