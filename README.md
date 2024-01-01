@@ -69,3 +69,10 @@
 - [100167. 统计移除递增子数组的数目 II][link] (Medium)
 
 [link]: https://leetcode.cn/contest/biweekly-contest-120/problems/count-the-number-of-incremovable-subarrays-ii/
+
+
+## Bad Problem
+
+- [1599. 经营摩天轮的最大利润][link] (Medium)
+
+[link]: https://leetcode.cn/problems/maximum-profit-of-operating-a-centennial-wheel/
