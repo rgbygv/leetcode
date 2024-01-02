@@ -14,6 +14,10 @@
 
 [link]: https://leetcode.cn/problems/wiggle-sort-ii/
 
+- [0466. 统计重复个数][link] (Hard)
+
+[link]: https://leetcode.cn/problems/count-the-repetitions/
+
 - [1038. 从二叉搜索树到更大和树][link] (Medium)
 
 [link]: https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/
