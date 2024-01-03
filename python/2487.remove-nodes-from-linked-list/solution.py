@@ -26,16 +26,25 @@ from typing import List, Optional
 #         self.next = next
 class Solution:
     def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        st = []
-        while head:
-            while st and head.val > st[-1].val:
-                st.pop()
-            st.append(head)
-            head = head.next
+        if not head.next:
+            return head
 
-        for x, y in pairwise(st):
-            x.next = y
-        return st[0]
+        node = self.removeNodes(head.next)
+        if head.val >= node.val:
+            head.next = node
+            return head
+        return node
+
+        # st = []
+        # while head:
+        #     while st and head.val > st[-1].val:
+        #         st.pop()
+        #     st.append(head)
+        #     head = head.next
+
+        # for x, y in pairwise(st):
+        #     x.next = y
+        # return st[0]
 
 
 # @lc code=end
