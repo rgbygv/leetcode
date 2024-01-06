@@ -1,14 +1,8 @@
-# This is the leetgo project level config, global config is at /root/.config/leetgo/config.yaml
-# For more details, please refer to https://github.com/j178/leetgo
+author: Jones
 language: zh
 code:
   lang: python
-
   python3:
-    out_dir: python
-    # Python executable that creates the venv
-    executable: python3
-    filename_template: ""
     blocks:
     - name: beforeMarker
       template: |
@@ -28,6 +22,8 @@ leetcode:
   credentials:
     # How to provide credentials: browser, cookies, password or none
     from: cookies
+contest:
+  open_in_browser: false
 editor:
   use: custom
   command: "code"
