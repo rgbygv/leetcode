@@ -1,0 +1,17 @@
+input:
+"accca"
+2
+output:
+3
+
+input:
+"aabaab"
+3
+output:
+1
+
+input:
+"xxyz"
+1
+output:
+4
