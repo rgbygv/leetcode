@@ -50,6 +50,10 @@
 
 [link]: https://leetcode.cn/problems/minimum-fuel-cost-to-report-to-the-capital/
 
+- [2645. 构造有效字符串的最少插入数][link] (Medium)
+
+[link]: https://leetcode.cn/problems/minimum-additions-to-make-valid-string/
+
 - [2646. 最小化旅行的价格总和][link] (Hard)
 
 [link]: https://leetcode.cn/problems/minimize-the-total-price-of-the-trips/
