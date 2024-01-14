@@ -1,0 +1,15 @@
+input:
+"isawsquirrelnearmysquirrelhouseohmy"
+"my"
+"squirrel"
+15
+output:
+[16,33]
+
+input:
+"abcd"
+"a"
+"a"
+4
+output:
+[0]
