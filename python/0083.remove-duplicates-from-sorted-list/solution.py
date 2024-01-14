@@ -28,11 +28,22 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head:
             return head
-        nxt = self.deleteDuplicates(head.next)
-        if nxt and head.val == nxt.val:
-            return nxt
-        head.next = nxt
-        return head
+        # nxt = self.deleteDuplicates(head.next)
+        # if nxt and head.val == nxt.val:
+        #     return nxt
+        # head.next = nxt
+        # return head
+        dummp = ListNode(0)
+        p = dummp
+        while head:
+            nxt = head.next
+            while nxt and nxt.val == head.val:
+                nxt = nxt.next
+            p.next = head
+            head = nxt
+            p = p.next
+        p.next = head
+        return dummp.next
 
 
 # @lc code=end
