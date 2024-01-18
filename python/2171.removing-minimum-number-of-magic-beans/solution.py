@@ -21,24 +21,35 @@ from typing import List, Optional
 
 class Solution:
     def minimumRemoval(self, beans: List[int]) -> int:
-        s = sum(beans)
-
-        heapify(beans)
-        # print(beans)
-
-        res = inf
+        beans.sort()
         n = len(beans)
         pre = 0
-        for x in range(max(beans) + 1):
-            while beans and beans[0] < x:
-                b = heappop(beans)
-                pre += b
-                n -= 1
-                s -= b
-            cur = pre + s - x * n
-            res = min(res, cur)
-            # print(x, cur, res)
+        s = sum(beans)
+        res = inf
+        for i, x in enumerate(beans):
+            res = min(res, pre + s - x * (n - i))
+            pre += x
+            s -= x
         return res
+
+        # s = sum(beans)
+
+        # heapify(beans)
+        # # print(beans)
+
+        # res = inf
+        # n = len(beans)
+        # pre = 0
+        # for x in range(max(beans) + 1):
+        #     while beans and beans[0] < x:
+        #         b = heappop(beans)
+        #         pre += b
+        #         n -= 1
+        #         s -= b
+        #     cur = pre + s - x * n
+        #     res = min(res, cur)
+        #     # print(x, cur, res)
+        # return res
 
 
 # @lc code=end
