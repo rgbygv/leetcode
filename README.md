@@ -62,6 +62,10 @@
 
 [link]: https://leetcode.cn/problems/collecting-chocolates/
 
+- [2809. 使数组和小于等于 x 的最少时间][link] (Hard)
+
+[link]: https://leetcode.cn/problems/minimum-time-to-make-array-sum-at-most-x/
+
 - [2866. 美丽塔 II][link] (Medium)
 
 [link]: https://leetcode.cn/problems/beautiful-towers-ii/
