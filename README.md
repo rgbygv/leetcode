@@ -82,11 +82,13 @@
 
 [link]: https://leetcode.cn/contest/biweekly-contest-122/problems/minimize-length-of-array-using-operations/
 
-
 - [100167. 统计移除递增子数组的数目 II][link] (Medium)
 
 [link]: https://leetcode.cn/contest/biweekly-contest-120/problems/count-the-number-of-incremovable-subarrays-ii/
 
+- [100199. 判断一个数组是否可以变为有序][link] (Medium)
+
+[link]: https://leetcode.cn/contest/biweekly-contest-122/problems/find-if-array-can-be-sorted/
 
 ## Bad Problem
 
