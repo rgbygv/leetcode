@@ -1,5 +1,7 @@
 # LeetCode Python Solution
 
+This repository contains my solutions to the LeetCode daily challenges and contest questions, primarily written in Python. 
+
 ## Challenging Problem
 
 - [0113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii) (Medium)
