@@ -1,0 +1,9 @@
+input:
+"abcde"
+output:
+5
+
+input:
+"xycdefghij"
+output:
+12
