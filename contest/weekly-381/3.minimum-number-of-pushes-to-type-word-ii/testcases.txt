@@ -1,0 +1,14 @@
+input:
+"abcde"
+output:
+5
+
+input:
+"xyzxyzxyzxyz"
+output:
+12
+
+input:
+"aabbccddeeffgghhiiiiii"
+output:
+24
