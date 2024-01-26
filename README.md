@@ -36,6 +36,8 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 
 - [2809. 使数组和小于等于 x 的最少时间](https://leetcode.cn/problems/minimum-time-to-make-array-sum-at-most-x) (Hard)
 
+- [2846. 边权重均等查询](https://leetcode.cn/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/)(Hard)
+
 - [2866. 美丽塔 II](https://leetcode.cn/problems/beautiful-towers-ii) (Medium)
 
 - [2949. 统计美丽子字符串 II](https://leetcode.cn/problems/count-beautiful-substrings-ii) (Hard)
