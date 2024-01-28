@@ -10,6 +10,8 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 
 - [0324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii) (Medium)
 
+- [0365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) (Medium)
+
 - [0466. 统计重复个数](https://leetcode.cn/problems/count-the-repetitions) (Hard)
 
 - [1038. 从二叉搜索树到更大和树](https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree) (Medium)
