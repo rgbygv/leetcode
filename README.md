@@ -44,6 +44,8 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 
 - [2949. 统计美丽子字符串 II](https://leetcode.cn/problems/count-beautiful-substrings-ii) (Hard)
 
+- [3020. 子集中元素的最大数量](https://leetcode.cn/contest/weekly-contest-382/problems/find-the-maximum-number-of-elements-in-subset/) (Medium)
+
 - [100141. 树中每个节点放置的金币数目](https://leetcode.cn/problems/find-number-of-coins-to-place-in-tree-nodes) (Hard)
 
 - [100164. 通过操作使数组长度最小](https://leetcode.cn/problems/minimize-length-of-array-using-operations) (Medium)
