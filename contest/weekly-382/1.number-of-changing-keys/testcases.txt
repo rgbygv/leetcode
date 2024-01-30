@@ -1,0 +1,9 @@
+input:
+"aAbBcC"
+output:
+2
+
+input:
+"AaAaAaaA"
+output:
+0
