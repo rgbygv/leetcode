@@ -22,32 +22,26 @@ from typing import List, Optional
 
 class Solution:
     def minOrAfterOperations(self, nums: List[int], k: int) -> int:
-        res = reduce(lambda x,y: x|y, nums)
-        N = res.bit_length()
-        
-        n = len(nums)
-        need = [-1] * (n+1)
-
-        def valid(i:int):
-            return all(need[i] != -1 for i in rang(i-1,i+2))
+        N = 30
+        res = 0
+        mask = 0
         for i in range(N-1,-1,-1):
-            # check if res[i] can be 0
-            if res >> i & 1 == 0:
-                continue
-            v = [j for j,x in enumerate(nums) if x >> i & 1 and valid(j)]
-            if v == n:
-                continue
-            if len(v) < k:
-                k -= len(v)
-                for j in v:
-                    need[j] = i
-            
-
+            mask |= 1 << i
+            cnt = 0
+            cur = -1
+            for x in nums:
+                cur &= x & mask
+                if cur:
+                    cnt += 1
+                else:
+                    cur = -1
+            if cnt > k:
+                res |= 1<<i
+                mask ^= 1<<i
         return res
-            
-            
-
-
+                    
+                
+        
 # @lc code=end
 
 if __name__ == "__main__":
