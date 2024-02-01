@@ -54,6 +54,8 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 
 - [100199. 判断一个数组是否可以变为有序](https://leetcode.cn/problems/find-if-array-can-be-sorted) (Medium)
 
+- [LCP 24. 数字游戏](https://leetcode.cn/problems/5TxKeK/) (Hard)
+
 ## Bad Problem
 
 - [1599. 经营摩天轮的最大利润](https://leetcode.cn/problems/maximum-profit-of-operating-a-centennial-wheel) (Medium)
