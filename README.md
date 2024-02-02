@@ -20,6 +20,8 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 
 - [1349. 参加考试的最大学生数](https://leetcode.cn/problems/maximum-students-taking-exam) (Hard)
 
+- [1686. 石子游戏 VI](https://leetcode.cn/problems/stone-game-vi/)(Medium)
+
 - [1901. 寻找峰值 II](https://leetcode.cn/problems/find-a-peak-element-ii) (Medium)
 
 - [1954. 收集足够苹果的最小花园周长](https://leetcode.cn/problems/minimum-garden-perimeter-to-collect-enough-apples) (Medium)
