@@ -22,6 +22,8 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 
 - [1686. 石子游戏 VI](https://leetcode.cn/problems/stone-game-vi/)(Medium)
 
+- [1690. 石子游戏 VII](https://leetcode.cn/problems/stone-game-vii/) (Medium)
+
 - [1901. 寻找峰值 II](https://leetcode.cn/problems/find-a-peak-element-ii) (Medium)
 
 - [1954. 收集足够苹果的最小花园周长](https://leetcode.cn/problems/minimum-garden-perimeter-to-collect-enough-apples) (Medium)
