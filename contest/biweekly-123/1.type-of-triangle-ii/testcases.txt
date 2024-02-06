@@ -1,0 +1,14 @@
+input:
+[3,3,3]
+output:
+"equilateral"
+
+input:
+[3,4,5]
+output:
+"scalene"
+
+input:
+[9,4,9]
+output:
+"isosceles"
