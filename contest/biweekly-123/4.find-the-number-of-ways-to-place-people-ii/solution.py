@@ -19,25 +19,24 @@ from string import ascii_lowercase
 from typing import List, Optional
 
 # @lc code=begin
-from sortedcontainers import SortedList
+
 
 class Solution:
     def numberOfPairs(self, points: List[List[int]]) -> int:
-        points.sort(key=lambda e:(e[0], -e[1]))
+        points.sort(key=lambda e: (e[0], -e[1]))
         n = len(points)
         res = 0
         for i in range(n):
-            x1,y1 = points[i]
-            q = SortedList()
-            q.add(y1)
-            for j in range(i+1,n):
-                x2,y2 = points[j]
-                if y1 >= y2:
-                    l = q.bisect_left(y2)
-                    r = q.bisect_right(y1) - 1
-                    res += l == r
-                q.add(y2)
+            _, y1 = points[i]
+            mx = -inf
+            for j in range(i + 1, n):
+                _, y2 = points[j]
+                if y1 >= y2 > mx:
+                    res += 1
+                    mx = y2
+        # print(points)
         return res
+
 
 # @lc code=end
 
