@@ -60,6 +60,8 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 
 - [LCP 24. 数字游戏](https://leetcode.cn/problems/5TxKeK/) (Hard)
 
+- [LCP 30. 魔塔游戏](https://leetcode.cn/problems/p0NxJO/) (Medium)
+
 ## Bad Problem
 
 - [1599. 经营摩天轮的最大利润](https://leetcode.cn/problems/maximum-profit-of-operating-a-centennial-wheel) (Medium)
