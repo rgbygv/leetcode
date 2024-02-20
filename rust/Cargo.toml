@@ -1,0 +1,14 @@
+[[bin]]
+name = 'missing-number'
+path = 'src/0268.missing-number/solution.rs'
+
+[dependencies]
+anyhow = '1.0.80'
+leetgo-rs = '0.2.1'
+serde = '1.0.197'
+serde_json = '1.0.114'
+
+[package]
+edition = '2021'
+name = 'leetcode-solutions'
+version = '0.1.0'
