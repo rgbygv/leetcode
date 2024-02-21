@@ -1,4 +1,8 @@
 [[bin]]
+name = 'bitwise-and-of-numbers-range'
+path = 'src/0201.bitwise-and-of-numbers-range/solution.rs'
+
+[[bin]]
 name = 'missing-number'
 path = 'src/0268.missing-number/solution.rs'
 
