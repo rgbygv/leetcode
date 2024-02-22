@@ -1,8 +1,17 @@
-# LeetCode Python Solution
+# LeetCode Daily Challenge Solution
 
-This repository contains my solutions to the LeetCode daily challenges and contest questions, primarily written in Python. 
+This repository contains my solutions to the LeetCode daily challenges and contest questions, primarily written in [Python](https://leetcode.cn/u/never_be_bald/) and [Rust](https://leetcode.com/tchxyc/). 
 
-## Challenging Problem
+
+## Editor
+Visual Studio Code + Neovim extension.
+
+
+## LeetCode CLI
+[leetgo](https://github.com/j178/leetgo). It's truly awesome!
+
+
+## Good Problem
 
 - [0113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii) (Medium)
 
@@ -63,6 +72,7 @@ This repository contains my solutions to the LeetCode daily challenges and conte
 - [LCP 24. 数字游戏](https://leetcode.cn/problems/5TxKeK/) (Hard)
 
 - [LCP 30. 魔塔游戏](https://leetcode.cn/problems/p0NxJO/) (Medium)
+
 
 ## Bad Problem
 
