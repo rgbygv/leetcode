@@ -6,6 +6,10 @@ path = 'src/0201.bitwise-and-of-numbers-range/solution.rs'
 name = 'missing-number'
 path = 'src/0268.missing-number/solution.rs'
 
+[[bin]]
+name = 'find-the-town-judge'
+path = 'src/0997.find-the-town-judge/solution.rs'
+
 [dependencies]
 anyhow = '1.0.80'
 leetgo-rs = '0.2.1'
