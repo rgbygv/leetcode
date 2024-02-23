@@ -18,6 +18,13 @@ code:
         from pprint import pprint
         from string import ascii_lowercase
         from typing import List, Optional
+  rust:
+  blocks:
+    - name: beforeCode
+      template: |
+        use std::cmp::Reverse;
+        use std::collections::*;
+        use std::mem::swap;
 leetcode:
   site: https://leetcode.cn
   credentials:
