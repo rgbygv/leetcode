@@ -7,6 +7,10 @@ name = 'missing-number'
 path = 'src/0268.missing-number/solution.rs'
 
 [[bin]]
+name = 'cheapest-flights-within-k-stops'
+path = 'src/0787.cheapest-flights-within-k-stops/solution.rs'
+
+[[bin]]
 name = 'find-the-town-judge'
 path = 'src/0997.find-the-town-judge/solution.rs'
 
