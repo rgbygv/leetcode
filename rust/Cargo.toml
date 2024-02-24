@@ -14,6 +14,10 @@ path = 'src/0787.cheapest-flights-within-k-stops/solution.rs'
 name = 'find-the-town-judge'
 path = 'src/0997.find-the-town-judge/solution.rs'
 
+[[bin]]
+name = 'find-all-people-with-secret'
+path = 'src/2092.find-all-people-with-secret/solution.rs'
+
 [dependencies]
 anyhow = '1.0.80'
 leetgo-rs = '0.2.1'
