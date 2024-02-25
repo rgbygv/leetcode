@@ -51,6 +51,8 @@ Visual Studio Code + Neovim extension.
 
 - [2646. 最小化旅行的价格总和](https://leetcode.cn/problems/minimize-the-total-price-of-the-trips) (Hard)
 
+- [2709. Greatest Common Divisor Traversal](https://leetcode.com/problems/greatest-common-divisor-traversal/)(Hard)
+
 - [2735. 收集巧克力](https://leetcode.cn/problems/collecting-chocolates) (Medium)
 
 - [2809. 使数组和小于等于 x 的最少时间](https://leetcode.cn/problems/minimum-time-to-make-array-sum-at-most-x) (Hard)
