@@ -1,4 +1,8 @@
 [[bin]]
+name = 'same-tree'
+path = 'src/0100.same-tree/solution.rs'
+
+[[bin]]
 name = 'bitwise-and-of-numbers-range'
 path = 'src/0201.bitwise-and-of-numbers-range/solution.rs'
 
