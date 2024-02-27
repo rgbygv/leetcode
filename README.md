@@ -61,6 +61,8 @@ Visual Studio Code + Neovim extension.
 
 - [2866. 美丽塔 II](https://leetcode.cn/problems/beautiful-towers-ii) (Medium)
 
+- [2867. 统计树中的合法路径数目](https://leetcode.cn/problems/count-valid-paths-in-a-tree/) (Hard)
+
 - [2949. 统计美丽子字符串 II](https://leetcode.cn/problems/count-beautiful-substrings-ii) (Hard)
 
 - [3020. 子集中元素的最大数量](https://leetcode.cn/contest/weekly-contest-382/problems/find-the-maximum-number-of-elements-in-subset/) (Medium)
