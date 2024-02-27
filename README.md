@@ -23,6 +23,8 @@ Visual Studio Code + Neovim extension.
 
 - [0466. 统计重复个数](https://leetcode.cn/problems/count-the-repetitions) (Hard)
 
+- [0543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)(Easy)
+
 - [0787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) (Medium)
 
 - [1038. 从二叉搜索树到更大和树](https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree) (Medium)
