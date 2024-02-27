@@ -11,6 +11,10 @@ name = 'missing-number'
 path = 'src/0268.missing-number/solution.rs'
 
 [[bin]]
+name = 'diameter-of-binary-tree'
+path = 'src/0543.diameter-of-binary-tree/solution.rs'
+
+[[bin]]
 name = 'cheapest-flights-within-k-stops'
 path = 'src/0787.cheapest-flights-within-k-stops/solution.rs'
 
