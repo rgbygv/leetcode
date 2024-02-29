@@ -27,6 +27,10 @@ name = 'find-the-town-judge'
 path = 'src/0997.find-the-town-judge/solution.rs'
 
 [[bin]]
+name = 'even-odd-tree'
+path = 'src/1609.even-odd-tree/solution.rs'
+
+[[bin]]
 name = 'find-all-people-with-secret'
 path = 'src/2092.find-all-people-with-secret/solution.rs'
 
