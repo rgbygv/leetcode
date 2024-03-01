@@ -89,6 +89,10 @@ Visual Studio Code + Neovim extension.
 
 - [0850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/) (Hard)
 
+### Mono Stack
+
+- [2289. 使数组按非递减顺序排列](https://leetcode.cn/problems/steps-to-make-array-non-decreasing/)(Hard)
+
 ### Re rooting
 
 - [2581. 统计可能的树根数目](https://leetcode.cn/problems/count-number-of-possible-root-nodes/) (Hard)
