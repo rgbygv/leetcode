@@ -81,6 +81,9 @@ Visual Studio Code + Neovim extension.
 
 - [LCP 30. 魔塔游戏](https://leetcode.cn/problems/p0NxJO/) (Medium)
 
+### DP
+- [2369. 检查数组是否存在有效划分](https://leetcode.cn/problems/check-if-there-is-a-valid-partition-for-the-array/) (Medium)
+
 
 ### Line Sweep
 
