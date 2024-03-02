@@ -23,6 +23,10 @@ name = 'cheapest-flights-within-k-stops'
 path = 'src/0787.cheapest-flights-within-k-stops/solution.rs'
 
 [[bin]]
+name = 'squares-of-a-sorted-array'
+path = 'src/0977.squares-of-a-sorted-array/solution.rs'
+
+[[bin]]
 name = 'find-the-town-judge'
 path = 'src/0997.find-the-town-judge/solution.rs'
 
