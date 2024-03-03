@@ -1,4 +1,8 @@
 [[bin]]
+name = 'remove-nth-node-from-end-of-list'
+path = 'src/0019.remove-nth-node-from-end-of-list/solution.rs'
+
+[[bin]]
 name = 'same-tree'
 path = 'src/0100.same-tree/solution.rs'
 
