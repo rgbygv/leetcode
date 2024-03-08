@@ -27,6 +27,10 @@ name = 'cheapest-flights-within-k-stops'
 path = 'src/0787.cheapest-flights-within-k-stops/solution.rs'
 
 [[bin]]
+name = 'middle-of-the-linked-list'
+path = 'src/0876.middle-of-the-linked-list/solution.rs'
+
+[[bin]]
 name = 'bag-of-tokens'
 path = 'src/0948.bag-of-tokens/solution.rs'
 
