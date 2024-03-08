@@ -62,6 +62,10 @@ path = 'src/2709.greatest-common-divisor-traversal/solution.rs'
 name = 'maximum-odd-binary-number'
 path = 'src/2864.maximum-odd-binary-number/solution.rs'
 
+[[bin]]
+name = 'count-elements-with-maximum-frequency'
+path = 'src/3005.count-elements-with-maximum-frequency/solution.rs'
+
 [dependencies]
 anyhow = '1.0.80'
 leetgo-rs = '0.2.1'
