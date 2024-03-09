@@ -1,4 +1,4 @@
-# Created by Jones at 2024/03/09 13:09
+# Created by Jones at 2024/03/09 22:47
 # leetgo: 1.4.1
 # https://leetcode.cn/problems/find-the-k-sum-of-an-array/
 
@@ -23,44 +23,22 @@ from typing import List, Optional
 class Solution:
     def kSum(self, nums: List[int], k: int) -> int:
         n = len(nums)
-
+        s = 0
+        for i in range(n):
+            if nums[i] > 0:
+                s += nums[i]
+            else:
+                nums[i] = -nums[i]
         nums.sort()
 
-        i = bisect_left(nums, 0)
-        j = i
-        while i < n and nums[i] == 0:
-            i += 1
-
-        # (0..j) < 0,  (j..i) == 0, (i..n) > 0
-        mx = sum(nums[i:])
-        cnt = i - j
-        # 0 can be chosen or don't choose and k <= min(2000,2**n)
-        size = 2 ** min(cnt, 11)
-        if size >= k:
-            return mx
-
-        # add a neg, or del a pos to change
-        # q = [(-mx, j - 1, i)]
-        s, left, right = mx, j - 1, i
-        print(nums)
-        while k > 0:
-            # s, left, right = heappop(q)
-            # s = -s
-            print(k, s, left, right)
-            if s < 0:
-                k -= 1  # empty sub array
-                if k == 0:
-                    return 0
-            if k <= size:
-                return s
-            k -= size
-            if left == -1 or -nums[left] >= nums[right]:
-                s -= nums[right]
-                right += 1
-            else:
-                s += nums[left]
-                left -= 1
-        return -1
+        q = [(0, 0)]
+        for _ in range(k - 1):
+            cur, i = heappop(q)
+            if i < len(nums):
+                heappush(q, (cur + nums[i], i + 1))
+                if i:
+                    heappush(q, (cur + nums[i] - nums[i - 1], i + 1))
+        return s - q[0][0]
 
 
 # @lc code=end
