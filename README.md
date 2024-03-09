@@ -103,6 +103,10 @@ Visual Studio Code + Neovim extension.
 
 - [2581. 统计可能的树根数目](https://leetcode.cn/problems/count-number-of-possible-root-nodes/) (Hard)
 
+### Other
+
+- [2386. 找出数组的第 K 大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) (Hard)
+
 
 ## Bad Problem
 
