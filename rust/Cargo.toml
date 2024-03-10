@@ -15,6 +15,10 @@ name = 'missing-number'
 path = 'src/0268.missing-number/solution.rs'
 
 [[bin]]
+name = 'intersection-of-two-arrays'
+path = 'src/0349.intersection-of-two-arrays/solution.rs'
+
+[[bin]]
 name = 'find-bottom-left-tree-value'
 path = 'src/0513.find-bottom-left-tree-value/solution.rs'
 
