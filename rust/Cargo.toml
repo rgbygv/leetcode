@@ -51,6 +51,10 @@ name = 'find-the-town-judge'
 path = 'src/0997.find-the-town-judge/solution.rs'
 
 [[bin]]
+name = 'remove-zero-sum-consecutive-nodes-from-linked-list'
+path = 'src/1171.remove-zero-sum-consecutive-nodes-from-linked-list/solution.rs'
+
+[[bin]]
 name = 'even-odd-tree'
 path = 'src/1609.even-odd-tree/solution.rs'
 
