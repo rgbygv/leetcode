@@ -1,0 +1,9 @@
+input:
+1
+output:
+"foobar"
+
+input:
+2
+output:
+"foobarfoobar"
