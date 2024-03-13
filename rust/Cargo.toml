@@ -67,6 +67,10 @@ name = 'find-all-people-with-secret'
 path = 'src/2092.find-all-people-with-secret/solution.rs'
 
 [[bin]]
+name = 'find-the-pivot-integer'
+path = 'src/2485.find-the-pivot-integer/solution.rs'
+
+[[bin]]
 name = 'minimum-common-value'
 path = 'src/2540.minimum-common-value/solution.rs'
 
