@@ -39,6 +39,10 @@ name = 'middle-of-the-linked-list'
 path = 'src/0876.middle-of-the-linked-list/solution.rs'
 
 [[bin]]
+name = 'binary-subarrays-with-sum'
+path = 'src/0930.binary-subarrays-with-sum/solution.rs'
+
+[[bin]]
 name = 'bag-of-tokens'
 path = 'src/0948.bag-of-tokens/solution.rs'
 
