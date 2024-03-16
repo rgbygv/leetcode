@@ -27,6 +27,10 @@ name = 'find-bottom-left-tree-value'
 path = 'src/0513.find-bottom-left-tree-value/solution.rs'
 
 [[bin]]
+name = 'contiguous-array'
+path = 'src/0525.contiguous-array/solution.rs'
+
+[[bin]]
 name = 'diameter-of-binary-tree'
 path = 'src/0543.diameter-of-binary-tree/solution.rs'
 
