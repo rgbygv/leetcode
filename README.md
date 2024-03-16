@@ -81,6 +81,11 @@ Visual Studio Code + Neovim extension.
 
 - [LCP 30. 魔塔游戏](https://leetcode.cn/problems/p0NxJO/) (Medium)
 
+### Binary Search
+
+- [0378. 有序矩阵中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
+
+
 ### DP
 
 - [1976. 到达目的地的方案数](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
