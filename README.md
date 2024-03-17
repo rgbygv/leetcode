@@ -96,6 +96,10 @@ Visual Studio Code + Neovim extension.
 
 - [2684. 矩阵中移动的最大次数](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 
+### Graph
+
+- [0310. 最小高度树](https://leetcode.cn/problems/minimum-height-trees/) (Medium)
+
 ### Greedy
 
 - [0948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) (Medium)
