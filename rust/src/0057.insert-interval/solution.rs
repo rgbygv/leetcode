@@ -13,40 +13,25 @@ use std::collections::*;
 use std::mem::swap;
 
 impl Solution {
-    pub fn insert(mut intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>> {
+    pub fn insert(intervals: Vec<Vec<i32>>, new_interval: Vec<i32>) -> Vec<Vec<i32>> {
         let n = intervals.len();
-        if n == 0 || new_interval[0] > intervals[n - 1][1] {
-            intervals.push(new_interval);
-            return intervals;
+        if n == 0 {
+            return vec![new_interval];
         }
         let (mut l, mut r) = (new_interval[0], new_interval[1]);
-        if r < intervals[0][0] {
-            intervals.insert(0, new_interval);
-            return intervals;
-        }
         let mut res = vec![];
         let mut i = 0;
-        while i < n {
-            let (x, y) = (intervals[i][0], intervals[i][1]);
-            if y < l {
-                res.push(vec![x, y]);
-            } else if r < x {
-                res.push(vec![l, r]);
-				res.extend(intervals[i..].to_owned().into_iter());
-                break;
-            } else {
-                l = l.min(x);
-                r = r.max(y);
-                while i < n && intervals[i][0] <= r {
-                    r = r.max(intervals[i][1]);
-                    i += 1;
-                }
-                res.push(vec![l, r]);
-                res.extend(intervals[i..].to_owned().into_iter());
-                break;
-            }
+        while i < n && intervals[i][1] < l {
+            res.push(intervals[i].to_owned());
             i += 1;
         }
+        while i < n && intervals[i][0] <= r {
+            l = l.min(intervals[i][0]);
+            r = r.max(intervals[i][1]);
+            i += 1;
+        }
+        res.push(vec![l, r]);
+        res.extend(intervals[i..].to_owned().into_iter());
         res
     }
 }
