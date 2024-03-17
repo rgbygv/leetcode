@@ -1,0 +1,30 @@
+[[bin]]
+name = 'existence-of-a-substring-in-a-string-and-its-reverse'
+path = 'src/weekly-389/1.existence-of-a-substring-in-a-string-and-its-reverse/solution.rs'
+
+[[bin]]
+name = 'count-substrings-starting-and-ending-with-given-character'
+path = 'src/weekly-389/2.count-substrings-starting-and-ending-with-given-character/solution.rs'
+
+[[bin]]
+name = 'minimum-deletions-to-make-string-k-special'
+path = 'src/weekly-389/3.minimum-deletions-to-make-string-k-special/solution.rs'
+
+[[bin]]
+name = 'minimum-moves-to-pick-k-ones'
+path = 'src/weekly-389/4.minimum-moves-to-pick-k-ones/solution.rs'
+
+[dependencies]
+anyhow = '1.0.79'
+leetgo-rs = '0.2.1'
+serde = '1.0.196'
+serde_json = '1.0.113'
+
+[lints]
+[lints.rust]
+unused_imports = 'allow'
+
+[package]
+edition = '2021'
+name = 'leetcode-solutions'
+version = '0.1.0'
