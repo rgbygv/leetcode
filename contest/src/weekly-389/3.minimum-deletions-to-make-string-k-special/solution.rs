@@ -29,25 +29,39 @@ impl Solution {
         while *cnt.last().unwrap() == 0 {
             cnt.pop();
         }
-
         let mut res = n;
-        for l in 0..=n - k {
-            let r = l + k; // cnt[i] should in [l, r], or be 0
+        for &x in &cnt {
             let mut cur = 0;
-            for &x in &cnt {
-                if x == 0 || (l <= x && x <= r) {
-                    continue;
-                }
-                if x > r {
-                    cur += x - r;
-                } else {
-                    cur += x;
+            for &y in &cnt {
+                // x-k, x+k
+                if y < x {
+                    cur += y
+                } else if y > x + k {
+                    cur += y - (x + k)
                 }
             }
             res = res.min(cur)
         }
-
         res as _
+
+        // let mut res = n;
+        // for l in 0..=n - k {
+        //     let r = l + k; // cnt[i] should in [l, r], or be 0
+        //     let mut cur = 0;
+        //     for &x in &cnt {
+        //         if x == 0 || (l <= x && x <= r) {
+        //             continue;
+        //         }
+        //         if x > r {
+        //             cur += x - r;
+        //         } else {
+        //             cur += x;
+        //         }
+        //     }
+        //     res = res.min(cur)
+        // }
+
+        // res as _
     }
 }
 
