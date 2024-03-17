@@ -1,7 +1,7 @@
 author: Jones
-language: zh
+language: en
 code:
-  lang: python
+  lang: rust
   python3:
     blocks:
     - name: beforeMarker
@@ -28,7 +28,6 @@ code:
 leetcode:
   site: https://leetcode.cn
   credentials:
-    # How to provide credentials: browser, cookies, password or none
     from: cookies
 contest:
   open_in_browser: false
