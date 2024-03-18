@@ -31,6 +31,10 @@ name = 'intersection-of-two-arrays'
 path = 'src/0349.intersection-of-two-arrays/solution.rs'
 
 [[bin]]
+name = 'minimum-number-of-arrows-to-burst-balloons'
+path = 'src/0452.minimum-number-of-arrows-to-burst-balloons/solution.rs'
+
+[[bin]]
 name = 'find-bottom-left-tree-value'
 path = 'src/0513.find-bottom-left-tree-value/solution.rs'
 
