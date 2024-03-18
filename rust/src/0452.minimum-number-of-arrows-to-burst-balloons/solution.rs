@@ -13,20 +13,18 @@ use std::collections::*;
 use std::mem::swap;
 
 impl Solution {
-    pub fn find_min_arrow_shots(points: Vec<Vec<i32>>) -> i32 {
-        let mut a = points;
+    pub fn find_min_arrow_shots(mut a: Vec<Vec<i32>>) -> i32 {
         a.sort_unstable_by_key(|e| e[1]);
         let n = a.len();
         let mut i = 0;
         let mut res = 0;
         while i < n {
             let end = a[i][1];
-            let mut j = i + 1;
-            while j < n && a[j][0] <= end {
-                j += 1;
+            i += 1;
+            while i < n && a[i][0] <= end {
+                i += 1;
             }
             res += 1;
-            i = j
         }
         res
     }
