@@ -47,6 +47,10 @@ name = 'diameter-of-binary-tree'
 path = 'src/0543.diameter-of-binary-tree/solution.rs'
 
 [[bin]]
+name = 'task-scheduler'
+path = 'src/0621.task-scheduler/solution.rs'
+
+[[bin]]
 name = 'cheapest-flights-within-k-stops'
 path = 'src/0787.cheapest-flights-within-k-stops/solution.rs'
 
