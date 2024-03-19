@@ -102,6 +102,8 @@ Visual Studio Code + Neovim extension.
 
 ### Greedy
 
+- [0621. Task Scheduler](https://leetcode.cn/problems/task-scheduler/) (Medium)
+
 - [0948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) (Medium)
 
 ### Line Sweep
