@@ -106,6 +106,8 @@ Visual Studio Code + Neovim extension.
 
 - [0948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) (Medium)
 
+- [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.cn/problems/minimum-non-zero-product-of-the-array-elements/)(Medium)
+
 ### Line Sweep
 
 - [0850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/) (Hard)
