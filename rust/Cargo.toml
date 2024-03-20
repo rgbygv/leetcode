@@ -99,6 +99,10 @@ name = 'maximum-score-of-a-good-subarray'
 path = 'src/1793.maximum-score-of-a-good-subarray/solution.rs'
 
 [[bin]]
+name = 'minimum-non-zero-product-of-the-array-elements'
+path = 'src/1969.minimum-non-zero-product-of-the-array-elements/solution.rs'
+
+[[bin]]
 name = 'find-all-people-with-secret'
 path = 'src/2092.find-all-people-with-secret/solution.rs'
 
