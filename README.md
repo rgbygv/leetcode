@@ -113,7 +113,10 @@ Visual Studio Code + Neovim extension.
 - [0850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/) (Hard)
 
 ### Linked List
+
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
+
+- [1669. Merge In Between Linked Lists](https://leetcode.cn/problems/merge-in-between-linked-lists/) (Medium)
 
 ### Mono Stack
 
