@@ -119,6 +119,10 @@ name = 'minimum-common-value'
 path = 'src/2540.minimum-common-value/solution.rs'
 
 [[bin]]
+name = 'frequency-tracker'
+path = 'src/2671.frequency-tracker/solution.rs'
+
+[[bin]]
 name = 'greatest-common-divisor-traversal'
 path = 'src/2709.greatest-common-divisor-traversal/solution.rs'
 
