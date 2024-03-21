@@ -15,6 +15,10 @@ name = 'bitwise-and-of-numbers-range'
 path = 'src/0201.bitwise-and-of-numbers-range/solution.rs'
 
 [[bin]]
+name = 'reverse-linked-list'
+path = 'src/0206.reverse-linked-list/solution.rs'
+
+[[bin]]
 name = 'product-of-array-except-self'
 path = 'src/0238.product-of-array-except-self/solution.rs'
 
