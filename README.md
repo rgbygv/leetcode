@@ -114,6 +114,8 @@ Visual Studio Code + Neovim extension.
 
 ### Linked List
 
+- [0234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) (Easy)
+
 - [1171. Remove Zero Sum Consecutive Nodes from Linked List](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/) (Medium)
 
 - [1669. Merge In Between Linked Lists](https://leetcode.cn/problems/merge-in-between-linked-lists/) (Medium)
