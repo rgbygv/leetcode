@@ -19,6 +19,10 @@ name = 'reverse-linked-list'
 path = 'src/0206.reverse-linked-list/solution.rs'
 
 [[bin]]
+name = 'palindrome-linked-list'
+path = 'src/0234.palindrome-linked-list/solution.rs'
+
+[[bin]]
 name = 'product-of-array-except-self'
 path = 'src/0238.product-of-array-except-self/solution.rs'
 
