@@ -127,6 +127,10 @@ name = 'minimum-common-value'
 path = 'src/2540.minimum-common-value/solution.rs'
 
 [[bin]]
+name = 'count-distinct-numbers-on-board'
+path = 'src/2549.count-distinct-numbers-on-board/solution.rs'
+
+[[bin]]
 name = 'minimum-number-of-visited-cells-in-a-grid'
 path = 'src/2617.minimum-number-of-visited-cells-in-a-grid/solution.rs'
 
