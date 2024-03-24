@@ -35,6 +35,10 @@ name = 'range-sum-query-immutable'
 path = 'src/0303.range-sum-query-immutable/solution.rs'
 
 [[bin]]
+name = 'coin-change'
+path = 'src/0322.coin-change/solution.rs'
+
+[[bin]]
 name = 'intersection-of-two-arrays'
 path = 'src/0349.intersection-of-two-arrays/solution.rs'
 
