@@ -31,6 +31,10 @@ name = 'missing-number'
 path = 'src/0268.missing-number/solution.rs'
 
 [[bin]]
+name = 'find-the-duplicate-number'
+path = 'src/0287.find-the-duplicate-number/solution.rs'
+
+[[bin]]
 name = 'range-sum-query-immutable'
 path = 'src/0303.range-sum-query-immutable/solution.rs'
 
