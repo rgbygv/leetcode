@@ -138,3 +138,7 @@ Visual Studio Code + Neovim extension.
 ## Bad Problem
 
 - [1599. 经营摩天轮的最大利润](https://leetcode.cn/problems/maximum-profit-of-operating-a-centennial-wheel) (Medium)
+
+## Interesting Problem
+
+- [0287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) (Medium)
