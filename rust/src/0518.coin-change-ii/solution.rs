@@ -19,32 +19,17 @@ impl Solution {
         let mut f = vec![0; m + 1];
         f[0] = 1;
 
-        // O(m*m)
+        // f[i][x] = f[i-1][x] + f[i-1][x -coins[i]]
+
+        // O(m * len(coins))
         for c in coins {
             let c = c as usize;
-            for x in (1..=m).rev() {
-                for y in (c..=m / c * c).rev().step_by(c) {
-                    // println!("{x} {y} {c}");
-                    if x >= y {
-                        f[x] += f[x - y]
-                    }
-                }
+            for x in c..=m {
+                f[x] += f[x - c]
             }
         }
-        // println!("{f:?}");
+
         f[m]
-
-        // for x in 1..=m {
-        //     for &y in &coins {
-        //         let y = y as usize;
-        //         if x >= y {
-        //             f[x] += f[x - y];
-        //         }
-        //     }
-        // }
-        // println!("{f:?}");
-
-        // f[m]
     }
 }
 
