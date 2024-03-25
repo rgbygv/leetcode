@@ -55,6 +55,10 @@ name = 'find-bottom-left-tree-value'
 path = 'src/0513.find-bottom-left-tree-value/solution.rs'
 
 [[bin]]
+name = 'coin-change-ii'
+path = 'src/0518.coin-change-ii/solution.rs'
+
+[[bin]]
 name = 'contiguous-array'
 path = 'src/0525.contiguous-array/solution.rs'
 
