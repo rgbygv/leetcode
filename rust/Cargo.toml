@@ -151,6 +151,10 @@ name = 'minimum-number-of-visited-cells-in-a-grid'
 path = 'src/2617.minimum-number-of-visited-cells-in-a-grid/solution.rs'
 
 [[bin]]
+name = 'design-graph-with-shortest-path-calculator'
+path = 'src/2642.design-graph-with-shortest-path-calculator/solution.rs'
+
+[[bin]]
 name = 'frequency-tracker'
 path = 'src/2671.frequency-tracker/solution.rs'
 
