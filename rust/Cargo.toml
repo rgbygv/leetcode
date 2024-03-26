@@ -3,6 +3,10 @@ name = 'remove-nth-node-from-end-of-list'
 path = 'src/0019.remove-nth-node-from-end-of-list/solution.rs'
 
 [[bin]]
+name = 'first-missing-positive'
+path = 'src/0041.first-missing-positive/solution.rs'
+
+[[bin]]
 name = 'insert-interval'
 path = 'src/0057.insert-interval/solution.rs'
 
