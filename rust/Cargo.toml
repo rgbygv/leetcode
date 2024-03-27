@@ -151,6 +151,10 @@ name = 'count-distinct-numbers-on-board'
 path = 'src/2549.count-distinct-numbers-on-board/solution.rs'
 
 [[bin]]
+name = 'count-ways-to-group-overlapping-ranges'
+path = 'src/2580.count-ways-to-group-overlapping-ranges/solution.rs'
+
+[[bin]]
 name = 'minimum-number-of-visited-cells-in-a-grid'
 path = 'src/2617.minimum-number-of-visited-cells-in-a-grid/solution.rs'
 
