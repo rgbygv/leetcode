@@ -79,6 +79,10 @@ name = 'task-scheduler'
 path = 'src/0621.task-scheduler/solution.rs'
 
 [[bin]]
+name = 'subarray-product-less-than-k'
+path = 'src/0713.subarray-product-less-than-k/solution.rs'
+
+[[bin]]
 name = 'cheapest-flights-within-k-stops'
 path = 'src/0787.cheapest-flights-within-k-stops/solution.rs'
 
