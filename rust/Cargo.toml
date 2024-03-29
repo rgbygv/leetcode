@@ -183,6 +183,10 @@ name = 'maximum-odd-binary-number'
 path = 'src/2864.maximum-odd-binary-number/solution.rs'
 
 [[bin]]
+name = 'minimum-sum-of-mountain-triplets-i'
+path = 'src/2908.minimum-sum-of-mountain-triplets-i/solution.rs'
+
+[[bin]]
 name = 'length-of-longest-subarray-with-at-most-k-frequency'
 path = 'src/2958.length-of-longest-subarray-with-at-most-k-frequency/solution.rs'
 
