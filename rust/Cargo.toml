@@ -191,6 +191,10 @@ name = 'length-of-longest-subarray-with-at-most-k-frequency'
 path = 'src/2958.length-of-longest-subarray-with-at-most-k-frequency/solution.rs'
 
 [[bin]]
+name = 'count-subarrays-where-max-element-appears-at-least-k-times'
+path = 'src/2962.count-subarrays-where-max-element-appears-at-least-k-times/solution.rs'
+
+[[bin]]
 name = 'count-elements-with-maximum-frequency'
 path = 'src/3005.count-elements-with-maximum-frequency/solution.rs'
 
