@@ -130,6 +130,10 @@ Visual Studio Code + Neovim extension.
 
 - [2581. 统计可能的树根数目](https://leetcode.cn/problems/count-number-of-possible-root-nodes/) (Hard)
 
+### Sliding Window
+- [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) (Medium)
+
+
 ### Other
 
 - [0057. 插入区间](https://leetcode.cn/problems/insert-interval/) (Medium)
