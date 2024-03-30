@@ -110,6 +110,8 @@ Visual Studio Code + Neovim extension.
 
 - [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.cn/problems/minimum-non-zero-product-of-the-array-elements/)(Medium)
 
+- [2952. Minimum Number of Coins to be Added](https://leetcode.cn/problems/minimum-number-of-coins-to-be-added/) (Medium)
+
 ### Line Sweep
 
 - [0850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/) (Hard)
