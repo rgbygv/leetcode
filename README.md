@@ -135,6 +135,9 @@ Visual Studio Code + Neovim extension.
 ### Sliding Window
 - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) (Medium)
 
+### Two pointer
+
+- [0992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) (Hard)
 
 ### Other
 
