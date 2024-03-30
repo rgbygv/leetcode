@@ -187,6 +187,10 @@ name = 'minimum-sum-of-mountain-triplets-i'
 path = 'src/2908.minimum-sum-of-mountain-triplets-i/solution.rs'
 
 [[bin]]
+name = 'minimum-number-of-coins-to-be-added'
+path = 'src/2952.minimum-number-of-coins-to-be-added/solution.rs'
+
+[[bin]]
 name = 'length-of-longest-subarray-with-at-most-k-frequency'
 path = 'src/2958.length-of-longest-subarray-with-at-most-k-frequency/solution.rs'
 
