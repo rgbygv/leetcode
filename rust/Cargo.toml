@@ -111,6 +111,10 @@ name = 'squares-of-a-sorted-array'
 path = 'src/0977.squares-of-a-sorted-array/solution.rs'
 
 [[bin]]
+name = 'subarrays-with-k-different-integers'
+path = 'src/0992.subarrays-with-k-different-integers/solution.rs'
+
+[[bin]]
 name = 'find-the-town-judge'
 path = 'src/0997.find-the-town-judge/solution.rs'
 
