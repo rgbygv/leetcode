@@ -14,6 +14,22 @@ path = 'src/weekly-389/3.minimum-deletions-to-make-string-k-special/solution.rs'
 name = 'minimum-moves-to-pick-k-ones'
 path = 'src/weekly-389/4.minimum-moves-to-pick-k-ones/solution.rs'
 
+[[bin]]
+name = 'harshad-number'
+path = 'src/weekly-391/1.harshad-number/solution.rs'
+
+[[bin]]
+name = 'water-bottles-ii'
+path = 'src/weekly-391/2.water-bottles-ii/solution.rs'
+
+[[bin]]
+name = 'count-alternating-subarrays'
+path = 'src/weekly-391/3.count-alternating-subarrays/solution.rs'
+
+[[bin]]
+name = 'minimize-manhattan-distances'
+path = 'src/weekly-391/4.minimize-manhattan-distances/solution.rs'
+
 [dependencies]
 anyhow = '1.0.79'
 leetgo-rs = '0.2.1'
