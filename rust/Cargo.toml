@@ -47,6 +47,10 @@ name = 'coin-change'
 path = 'src/0322.coin-change/solution.rs'
 
 [[bin]]
+name = 'verify-preorder-serialization-of-a-binary-tree'
+path = 'src/0331.verify-preorder-serialization-of-a-binary-tree/solution.rs'
+
+[[bin]]
 name = 'intersection-of-two-arrays'
 path = 'src/0349.intersection-of-two-arrays/solution.rs'
 
