@@ -191,6 +191,10 @@ name = 'greatest-common-divisor-traversal'
 path = 'src/2709.greatest-common-divisor-traversal/solution.rs'
 
 [[bin]]
+name = 'faulty-keyboard'
+path = 'src/2810.faulty-keyboard/solution.rs'
+
+[[bin]]
 name = 'maximum-odd-binary-number'
 path = 'src/2864.maximum-odd-binary-number/solution.rs'
 
