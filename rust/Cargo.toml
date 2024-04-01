@@ -11,6 +11,10 @@ name = 'insert-interval'
 path = 'src/0057.insert-interval/solution.rs'
 
 [[bin]]
+name = 'length-of-last-word'
+path = 'src/0058.length-of-last-word/solution.rs'
+
+[[bin]]
 name = 'same-tree'
 path = 'src/0100.same-tree/solution.rs'
 
