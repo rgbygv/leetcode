@@ -103,6 +103,10 @@ name = 'middle-of-the-linked-list'
 path = 'src/0876.middle-of-the-linked-list/solution.rs'
 
 [[bin]]
+name = 'all-possible-full-binary-trees'
+path = 'src/0894.all-possible-full-binary-trees/solution.rs'
+
+[[bin]]
 name = 'binary-subarrays-with-sum'
 path = 'src/0930.binary-subarrays-with-sum/solution.rs'
 
