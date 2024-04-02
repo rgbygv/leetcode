@@ -1,0 +1,17 @@
+input:
+"egg"
+"add"
+output:
+true
+
+input:
+"foo"
+"bar"
+output:
+false
+
+input:
+"paper"
+"title"
+output:
+true
