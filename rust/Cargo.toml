@@ -147,6 +147,10 @@ name = 'even-odd-tree'
 path = 'src/1609.even-odd-tree/solution.rs'
 
 [[bin]]
+name = 'maximum-nesting-depth-of-the-parentheses'
+path = 'src/1614.maximum-nesting-depth-of-the-parentheses/solution.rs'
+
+[[bin]]
 name = 'merge-in-between-linked-lists'
 path = 'src/1669.merge-in-between-linked-lists/solution.rs'
 
