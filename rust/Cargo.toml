@@ -171,6 +171,10 @@ name = 'find-all-people-with-secret'
 path = 'src/2092.find-all-people-with-secret/solution.rs'
 
 [[bin]]
+name = 'all-ancestors-of-a-node-in-a-directed-acyclic-graph'
+path = 'src/2192.all-ancestors-of-a-node-in-a-directed-acyclic-graph/solution.rs'
+
+[[bin]]
 name = 'count-subarrays-with-fixed-bounds'
 path = 'src/2444.count-subarrays-with-fixed-bounds/solution.rs'
 
