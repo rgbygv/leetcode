@@ -15,53 +15,46 @@ use std::mem::swap;
 impl Solution {
     pub fn get_ancestors(n: i32, edges: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         let n = n as usize;
-        let mut g = vec![vec![]; n];
+        let mut rg = vec![vec![]; n]; // reverse graph
 
-        for e in edges {
+        for e in &edges {
             let (x, y) = (e[0] as usize, e[1] as usize);
-            g[x].push(y)
+            rg[y].push(x); // build rev gragh
         }
+        let mut f = vec![HashSet::with_capacity(n); n];
+        let mut cache = HashMap::new();
 
-        let mut res = vec![HashSet::with_capacity(n); n];
-
-        fn dfs(x: usize, fa: usize, g: &Vec<Vec<usize>>, res: &mut Vec<HashSet<i32>>) {
-            for &y in &g[x] {
-                res[y].insert(fa as i32);
-                dfs(y, fa, g, res)
+        fn dfs(
+            x: usize,
+            rg: &Vec<Vec<usize>>,
+            f: &mut Vec<HashSet<usize>>,
+            cache: &mut HashMap<usize, HashSet<usize>>,
+        ) -> HashSet<usize> {
+            if cache.contains_key(&x) {
+                return cache.get(&x).unwrap().to_owned();
             }
+            for &y in &rg[x] {
+                f[x].insert(y);
+                for fa in dfs(y, rg, f, cache) {
+                    f[x].insert(fa);
+                }
+            }
+            cache.insert(x, f[x].clone());
+            f[x].clone()
         }
 
         for x in 0..n {
-            dfs(x, x, &g, &mut res)
+            dfs(x, &rg, &mut f, &mut cache);
         }
-        let mut res: Vec<Vec<i32>> = res.into_iter().map(|v| v.into_iter().collect()).collect();
-        for i in 0..n {
-            res[i].sort_unstable()
+
+        let mut res = vec![];
+
+        for x in 0..n {
+            let mut cur: Vec<i32> = f[x].iter().map(|&x| x as i32).collect();
+            cur.sort_unstable();
+            res.push(cur)
         }
         res
-        // let mut deg = vec![0; n];
-        // let mut g = vec![vec![]; n];
-
-        // for e in &edges {
-        //     let (x, y) = (e[0] as usize, e[1] as usize);
-        //     g[y].push(x); // build rev gragh
-        //     deg[x] += 1;
-        // }
-        // let mut f = vec![HashSet::with_capacity(n); n];
-
-        // fn dfs(x:usize, g: &Vec<Vec<usize>>, f: &mut Vec<HashSet<usize>>, deg: &mut Vec<i32>) {
-        // 	for &y in &g[x]{
-        // 		f[x].insert(y);
-        // 		deg[y] -= 1;
-        // 		if deg[y] == 0{
-        // 			dfs(y, g, f, deg);
-        // 		}
-        // 	}
-
-        // 	todo!()
-        // }
-
-        // todo!()
     }
 }
 
