@@ -28,7 +28,7 @@ code:
 leetcode:
   site: https://leetcode.cn
   credentials:
-    from: cookies
+    from: browser # cookies
 contest:
   open_in_browser: false
 editor:
