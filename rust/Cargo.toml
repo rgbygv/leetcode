@@ -139,6 +139,10 @@ name = 'find-the-town-judge'
 path = 'src/0997.find-the-town-judge/solution.rs'
 
 [[bin]]
+name = 'maximum-difference-between-node-and-ancestor'
+path = 'src/1026.maximum-difference-between-node-and-ancestor/solution.rs'
+
+[[bin]]
 name = 'remove-zero-sum-consecutive-nodes-from-linked-list'
 path = 'src/1171.remove-zero-sum-consecutive-nodes-from-linked-list/solution.rs'
 
