@@ -147,6 +147,10 @@ name = 'remove-zero-sum-consecutive-nodes-from-linked-list'
 path = 'src/1171.remove-zero-sum-consecutive-nodes-from-linked-list/solution.rs'
 
 [[bin]]
+name = 'kth-ancestor-of-a-tree-node'
+path = 'src/1483.kth-ancestor-of-a-tree-node/solution.rs'
+
+[[bin]]
 name = 'make-the-string-great'
 path = 'src/1544.make-the-string-great/solution.rs'
 
