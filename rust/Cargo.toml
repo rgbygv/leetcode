@@ -147,6 +147,10 @@ name = 'remove-zero-sum-consecutive-nodes-from-linked-list'
 path = 'src/1171.remove-zero-sum-consecutive-nodes-from-linked-list/solution.rs'
 
 [[bin]]
+name = 'minimum-remove-to-make-valid-parentheses'
+path = 'src/1249.minimum-remove-to-make-valid-parentheses/solution.rs'
+
+[[bin]]
 name = 'kth-ancestor-of-a-tree-node'
 path = 'src/1483.kth-ancestor-of-a-tree-node/solution.rs'
 
