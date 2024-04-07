@@ -159,6 +159,10 @@ name = 'make-the-string-great'
 path = 'src/1544.make-the-string-great/solution.rs'
 
 [[bin]]
+name = 'throne-inheritance'
+path = 'src/1600.throne-inheritance/solution.rs'
+
+[[bin]]
 name = 'even-odd-tree'
 path = 'src/1609.even-odd-tree/solution.rs'
 
