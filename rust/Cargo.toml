@@ -195,6 +195,10 @@ name = 'first-day-where-you-have-been-in-all-the-rooms'
 path = 'src/1997.first-day-where-you-have-been-in-all-the-rooms/solution.rs'
 
 [[bin]]
+name = 'minimum-number-of-operations-to-make-array-continuous'
+path = 'src/2009.minimum-number-of-operations-to-make-array-continuous/solution.rs'
+
+[[bin]]
 name = 'find-all-people-with-secret'
 path = 'src/2092.find-all-people-with-secret/solution.rs'
 
