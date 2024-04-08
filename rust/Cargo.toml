@@ -179,6 +179,10 @@ name = 'merge-in-between-linked-lists'
 path = 'src/1669.merge-in-between-linked-lists/solution.rs'
 
 [[bin]]
+name = 'number-of-students-unable-to-eat-lunch'
+path = 'src/1700.number-of-students-unable-to-eat-lunch/solution.rs'
+
+[[bin]]
 name = 'minimum-length-of-string-after-deleting-similar-ends'
 path = 'src/1750.minimum-length-of-string-after-deleting-similar-ends/solution.rs'
 
