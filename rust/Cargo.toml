@@ -219,6 +219,10 @@ name = 'find-the-pivot-integer'
 path = 'src/2485.find-the-pivot-integer/solution.rs'
 
 [[bin]]
+name = 'maximum-count-of-positive-integer-and-negative-integer'
+path = 'src/2529.maximum-count-of-positive-integer-and-negative-integer/solution.rs'
+
+[[bin]]
 name = 'minimum-common-value'
 path = 'src/2540.minimum-common-value/solution.rs'
 
