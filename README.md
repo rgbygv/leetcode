@@ -149,6 +149,8 @@ Visual Studio Code + Neovim extension.
 
 - [0331. Verify Preorder Serialization of a Binary Tree](https://leetcode.cn/problems/verify-preorder-serialization-of-a-binary-tree/) (Medium)
 
+- [1702. Maximum Binary String After Change](https://leetcode.cn/problems/maximum-binary-string-after-change/) (Medium)
+
 - [2386. 找出数组的第 K 大和](https://leetcode.cn/problems/find-the-k-sum-of-an-array/) (Hard)
 
 
