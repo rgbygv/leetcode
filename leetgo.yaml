@@ -1,7 +1,7 @@
 author: Jones
 language: en
 code:
-  lang: rust
+  lang: python
   python3:
     blocks:
     - name: beforeMarker
