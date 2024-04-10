@@ -183,6 +183,10 @@ name = 'number-of-students-unable-to-eat-lunch'
 path = 'src/1700.number-of-students-unable-to-eat-lunch/solution.rs'
 
 [[bin]]
+name = 'maximum-binary-string-after-change'
+path = 'src/1702.maximum-binary-string-after-change/solution.rs'
+
+[[bin]]
 name = 'minimum-length-of-string-after-deleting-similar-ends'
 path = 'src/1750.minimum-length-of-string-after-deleting-similar-ends/solution.rs'
 
