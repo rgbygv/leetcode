@@ -1,0 +1,9 @@
+input:
+"1?:?4"
+output:
+
+
+input:
+"0?:5?"
+output:
+
