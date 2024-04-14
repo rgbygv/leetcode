@@ -12,7 +12,7 @@ from copy import deepcopy
 from functools import cache, cmp_to_key, lru_cache, reduce
 from heapq import heapify, heappop, heappush, heappushpop, heapreplace
 from itertools import accumulate, chain, count, pairwise, zip_longest
-from math import ceil, comb, floor, gcd, inf, isqrt, log2, perm, sqrt
+from math import ceil, comb, floor, gcd, inf, isqrt, log2, perm, sqrt, lcm
 from operator import xor
 from pprint import pprint
 from string import ascii_lowercase
@@ -38,12 +38,16 @@ class Solution:
                 a.append(x)
         # 2 3 5 7 11 13 17 19 23
         coins = a
-        mp = {}
+        mp = []
 
-        for i in range(1, len(coins) + 1):
-            # choose `i` number from conis
-            op = (i & 1) * 2 - 1
-
+        n = len(coins)
+        for mask in range(1, 1 << n):
+            x = 1
+            for i in range(n):
+                if mask >> i & 1:
+                    x = lcm(x, coins[i])
+            op = (mask.bit_count() & 1) * 2 - 1
+            mp.append((x, op))
 
         l = coins[0]
         r = coins[0] * k
@@ -54,11 +58,12 @@ class Solution:
                 # how to handle `a number is count multi times`
                 # combine math
                 res = 0
-                for x, op in mp.items():
+                for x, op in mp:
                     cnt = mid // x
                     res += cnt * op
                 return res >= k
 
+            # print(mid, check(mid))
             if check(mid):
                 r = mid
             else:

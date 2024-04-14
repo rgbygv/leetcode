@@ -2,4 +2,16 @@ input:
 [3,6,9]
 3
 output:
+9
 
+input:
+[5,2]
+7
+output:
+12
+
+input:
+[20,6,15,16,22]
+25727
+output:
+88434
