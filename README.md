@@ -87,6 +87,8 @@ Visual Studio Code + Neovim extension.
 
 ### DFS
 
+- [0928. Minimize Malware Spread II](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
+
 - [0988. Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) (Medium)
 
 - [1600. Throne Inheritance](https://leetcode.cn/problems/throne-inheritance/) (Medium)
