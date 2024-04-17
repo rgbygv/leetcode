@@ -86,6 +86,9 @@ Visual Studio Code + Neovim extension.
 - [0378. 有序矩阵中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
 
 ### DFS
+
+- [0988. Smallest String Starting From Leaf](https://leetcode.com/problems/smallest-string-starting-from-leaf/) (Medium)
+
 - [1600. Throne Inheritance](https://leetcode.cn/problems/throne-inheritance/) (Medium)
 
 - [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) (Medium)
