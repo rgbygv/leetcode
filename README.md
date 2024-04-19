@@ -107,6 +107,8 @@ Visual Studio Code + Neovim extension.
 
 - [2369. 检查数组是否存在有效划分](https://leetcode.cn/problems/check-if-there-is-a-valid-partition-for-the-array/) (Medium)
 
+- [2518. Number of Great Partitions](https://leetcode.cn/problems/number-of-great-partitions/) (Hard)
+
 - [2684. 矩阵中移动的最大次数](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 
 ### Graph
