@@ -1,0 +1,14 @@
+input:
+"aaAbcBC"
+output:
+
+
+input:
+"abc"
+output:
+
+
+input:
+"AbBCab"
+output:
+
