@@ -152,6 +152,10 @@ Visual Studio Code + Neovim extension.
 
 - [0992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/) (Hard)
 
+### Union Find
+
+- [2334. Subarray With Elements Greater Than Varying Threshold](https://leetcode.cn/problems/subarray-with-elements-greater-than-varying-threshold/) (Hard)
+
 ### Other
 
 - [0057. 插入区间](https://leetcode.cn/problems/insert-interval/) (Medium)
