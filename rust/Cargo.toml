@@ -55,6 +55,10 @@ name = 'range-sum-query-immutable'
 path = 'src/0303.range-sum-query-immutable/solution.rs'
 
 [[bin]]
+name = 'minimum-height-trees'
+path = 'src/0310.minimum-height-trees/solution.rs'
+
+[[bin]]
 name = 'coin-change'
 path = 'src/0322.coin-change/solution.rs'
 
