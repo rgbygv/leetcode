@@ -63,9 +63,7 @@ impl Solution {
 // @lc code=end
 
 fn main() -> Result<()> {
-    // let n: i32 = deserialize(&read_line()?)?;
-    // let ans: Vec<BinaryTree> = Solution::all_possible_fbt(n).into();
-
-    // println!("\noutput: {}", serialize(ans)?);
+    let n: i32 = deserialize(&read_line()?)?;
+    Solution::all_possible_fbt(n);
     Ok(())
 }
