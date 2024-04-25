@@ -29,7 +29,6 @@ class Solution:
 
         n = len(nums)
 
-        # O(n * numslots * (1 << (2*numslots)))
         @cache
         def dfs(i: int, mask: int):
             """nums[i], mask show we have used how many of numSlots"""
@@ -37,15 +36,13 @@ class Solution:
             if i == n:
                 return 0
             # we use two bits to replace one slots, 00 and 01 is valid
+            # the time complex is O(n * numslots * (1 << (2*numslots)))
+            # why not image we have 2 * numslots slots? the time complex is 2 * O(n * numslots * (1 << (2*numslots))), which will be slower
             res = 0
-            for d in range(numSlots):
-                d *= 2  # use 2 bits
-                cur = mask >> d
-                if cur & 0b10 == 0:
+            for d in range(numSlots * 2):
+                if mask >> d & 1 == 0:
                     res = max(
-                        res,
-                        (nums[i] & (d // 2 + 1))
-                        + dfs(i + 1, ((cur + 1) << d) + (mask & ((1 << d) - 1))),
+                        res, (nums[i] & (d // 2 + 1)) + dfs(i + 1, mask ^ (1 << d))
                     )
             return res
 
