@@ -1,0 +1,9 @@
+input:
+["alex","loves","leetcode"]
+output:
+"alexlovesleetcode"
+
+input:
+["catg","ctaagt","gcta","ttca","atgcatc"]
+output:
+"gctaagttcatgcatc"
