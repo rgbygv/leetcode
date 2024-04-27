@@ -42,11 +42,11 @@ class Solution:
 
         # return dfs(0)
 
-        f = [0] * (n + k + maxPts + 1)
+        f = [0] * (k + maxPts + 1)
         s = 0
-        r = n + k + maxPts
+        r = k + maxPts
 
-        for x in range(n + k + maxPts, -1, -1):
+        for x in range(k + maxPts, -1, -1):
             if x >= k:
                 f[x] = int(x <= n)
             else:
