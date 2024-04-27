@@ -125,6 +125,11 @@ Visual Studio Code + Neovim extension.
 
 - [2952. Minimum Number of Coins to be Added](https://leetcode.cn/problems/minimum-number-of-coins-to-be-added/) (Medium)
 
+# Heap
+
+- [0786. K-th Smallest Prime Fraction](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) (Medium)
+
+
 ### Line Sweep
 
 - [0850. 矩形面积 II](https://leetcode.cn/problems/rectangle-area-ii/) (Hard)
