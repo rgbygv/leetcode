@@ -83,6 +83,10 @@ name = 'find-bottom-left-tree-value'
 path = 'src/0513.find-bottom-left-tree-value/solution.rs'
 
 [[bin]]
+name = 'freedom-trail'
+path = 'src/0514.freedom-trail/solution.rs'
+
+[[bin]]
 name = 'coin-change-ii'
 path = 'src/0518.coin-change-ii/solution.rs'
 
