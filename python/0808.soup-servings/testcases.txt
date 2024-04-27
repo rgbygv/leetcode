@@ -1,0 +1,14 @@
+input:
+50
+output:
+0.62500
+
+input:
+100
+output:
+0.71875
+
+input:
+482864250
+output:
+1.00000
