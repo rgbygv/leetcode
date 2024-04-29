@@ -22,46 +22,56 @@ from typing import List, Optional
 
 class Solution:
     def subarrayBitwiseORs(self, arr: List[int]) -> int:
-        N = 31
-        # what the most res is?
+        ans = set()
+        cur = set()
+        for x in arr:
+            cur = {y | x for y in cur} | {x}
+            ans |= cur
+        return len(ans)
 
-        # if now we are 11011, the only one can make res diff is
-        # have diffrent ones, so each turn at most have 31 answer
 
-        appear = [[] for _ in range(N)]  # the bits appear
-        for i, x in enumerate(arr):
-            for d in range(N):
-                if x >> d & 1:
-                    appear[d].append(i)
+# class Solution:
+#     def subarrayBitwiseORs(self, arr: List[int]) -> int:
+#         N = 31
+#         # what the most res is?
 
-        # can we store all the answer?
-        seen = set()
-        for i, x in enumerate(arr):
-            res = x
-            seen.add(res)
-            # find the bit can use
-            can = set(d for d, v in enumerate(appear) if v)
-            for d in range(N):
-                if x >> d & 1:
-                    can.remove(d)
-            # print(res, can, appear[:5])
-            while can:
-                # we should find the minimal j have 1 res don't have
-                j = inf
-                for d in can:
-                    v = appear[d]
-                    k = bisect_left(v, i)
-                    if k != len(v):
-                        j = min(j, v[k])
-                if j == inf:
-                    break
-                for d in can.copy():
-                    if arr[j] >> d & 1:
-                        can.remove(d)
-                res |= arr[j]
-                seen.add(res)
-        # print([bin(x) for x in seen])
-        return len(seen)
+#         # if now we are 11011, the only one can make res diff is
+#         # have diffrent ones, so each turn at most have 31 answer
+
+#         appear = [[] for _ in range(N)]  # the bits appear
+#         for i, x in enumerate(arr):
+#             for d in range(N):
+#                 if x >> d & 1:
+#                     appear[d].append(i)
+
+#         # can we store all the answer?
+#         seen = set()
+#         for i, x in enumerate(arr):
+#             res = x
+#             seen.add(res)
+#             # find the bit can use
+#             can = set(d for d, v in enumerate(appear) if v)
+#             for d in range(N):
+#                 if x >> d & 1:
+#                     can.remove(d)
+#             # print(res, can, appear[:5])
+#             while can:
+#                 # we should find the minimal j have 1 res don't have
+#                 j = inf
+#                 for d in can:
+#                     v = appear[d]
+#                     k = bisect_left(v, i)
+#                     if k != len(v):
+#                         j = min(j, v[k])
+#                 if j == inf:
+#                     break
+#                 for d in can.copy():
+#                     if arr[j] >> d & 1:
+#                         can.remove(d)
+#                 res |= arr[j]
+#                 seen.add(res)
+#         # print([bin(x) for x in seen])
+#         return len(seen)
 
 
 # @lc code=end
