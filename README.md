@@ -85,6 +85,11 @@ Visual Studio Code + Neovim extension.
 
 - [0378. 有序矩阵中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
 
+### Bit manipulation
+
+- [898. Bitwise ORs of Subarrays](https://leetcode.cn/problems/bitwise-ors-of-subarrays/) (Medium)
+
+
 ### DFS
 
 - [0928. Minimize Malware Spread II](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
