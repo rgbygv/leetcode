@@ -23,36 +23,27 @@ from typing import List, Optional
 class Solution:
     def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
         m, n = len(mat), len(mat[0])
+
+        def handle(start_x, start_y):
+            x, y = start_x, start_y
+            q = []
+            while x < m and y < n:
+                q.append(mat[x][y])
+                x += 1
+                y += 1
+            x, y = start_x, start_y
+            q.sort(reverse=True)
+            while x < m and y < n:
+                mat[x][y] = q.pop()
+                x += 1
+                y += 1
+
         # left
         for i in range(m):
-            x, y = i, 0
-            q = []
-            while x < m and y < n:
-                q.append(mat[x][y])
-                x += 1
-                y += 1
-            x, y = i, 0
-            q.sort(reverse=True)
-            while x < m and y < n:
-                mat[x][y] = q.pop()
-                x += 1
-                y += 1
-
+            handle(i, 0)
         # top
         for j in range(1, n):
-            x, y = 0, j
-            q = []
-            while x < m and y < n:
-                q.append(mat[x][y])
-                x += 1
-                y += 1
-            x, y = 0, j
-            q.sort(reverse=True)
-            while x < m and y < n:
-                mat[x][y] = q.pop()
-                x += 1
-                y += 1
-
+            handle(0, j)
         return mat
 
 
