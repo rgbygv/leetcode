@@ -87,7 +87,9 @@ Visual Studio Code + Neovim extension.
 
 ### Bit manipulation
 
-- [898. Bitwise ORs of Subarrays](https://leetcode.cn/problems/bitwise-ors-of-subarrays/) (Medium)
+- [0898. Bitwise ORs of Subarrays](https://leetcode.cn/problems/bitwise-ors-of-subarrays/) (Medium)
+
+- [1915. Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/) (Medium)
 
 
 ### DFS
