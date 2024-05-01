@@ -92,6 +92,11 @@ Visual Studio Code + Neovim extension.
 - [1915. Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/) (Medium)
 
 
+### Construct
+
+- [0932. Beautiful Array](https://leetcode.cn/problems/beautiful-array/) (Medium)
+
+
 ### DFS
 
 - [0928. Minimize Malware Spread II](https://leetcode.cn/problems/minimize-malware-spread-ii/) (Hard)
