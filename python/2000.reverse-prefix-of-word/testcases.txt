@@ -1,0 +1,17 @@
+input:
+"abcdefd"
+"d"
+output:
+"
+
+input:
+"xyxzxe"
+"z"
+output:
+"
+
+input:
+"abcd"
+"z"
+output:
+"abcd"
