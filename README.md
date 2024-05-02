@@ -137,6 +137,8 @@ Visual Studio Code + Neovim extension.
 
 - [0948. Bag of Tokens](https://leetcode.com/problems/bag-of-tokens/) (Medium)
 
+- [1040. Moving Stones Until Consecutive II](https://leetcode.cn/problems/moving-stones-until-consecutive-ii/) (Medium)
+
 - [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.cn/problems/minimum-non-zero-product-of-the-array-elements/)(Medium)
 
 - [2952. Minimum Number of Coins to be Added](https://leetcode.cn/problems/minimum-number-of-coins-to-be-added/) (Medium)
