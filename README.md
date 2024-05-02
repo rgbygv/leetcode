@@ -143,6 +143,7 @@ Visual Studio Code + Neovim extension.
 
 - [0786. K-th Smallest Prime Fraction](https://leetcode.cn/problems/k-th-smallest-prime-fraction/) (Medium)
 
+- [0857. Minimum Cost to Hire K Workers](https://leetcode.cn/problems/minimum-cost-to-hire-k-workers/) (Hard)
 
 ### Line Sweep
 
