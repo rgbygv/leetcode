@@ -113,6 +113,8 @@ Visual Studio Code + Neovim extension.
 
 - [0837. New 21 Game](https://leetcode.cn/problems/new-21-game/) (Medium)
 
+- [1049. Last Stone Weight II](https://leetcode.cn/problems/last-stone-weight-ii/) (Medium)
+
 - [1883. Minimum Skips to Arrive at Meeting On Time](https://leetcode.cn/problems/minimum-skips-to-arrive-at-meeting-on-time/) (Hard)
 
 - [1976. 到达目的地的方案数](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
