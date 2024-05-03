@@ -184,6 +184,9 @@ Visual Studio Code + Neovim extension.
 
 - [0855. Exam Room](https://leetcode.cn/problems/exam-room/) (Medium)
 
+### Stack
+
+- [1081. Smallest Subsequence of Distinct Characters](https://leetcode.cn/problems/smallest-subsequence-of-distinct-characters/) (Medium)
 
 ### Two pointer
 
