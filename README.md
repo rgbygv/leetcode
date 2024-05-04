@@ -163,6 +163,10 @@ Visual Studio Code + Neovim extension.
 
 - [1669. Merge In Between Linked Lists](https://leetcode.cn/problems/merge-in-between-linked-lists/) (Medium)
 
+### Math
+
+- [1131. Maximum of Absolute Value Expression](https://leetcode.cn/problems/maximum-of-absolute-value-expression/) (Medium)
+
 ### Mono Stack
 
 - [2289. 使数组按非递减顺序排列](https://leetcode.cn/problems/steps-to-make-array-non-decreasing/)(Hard)
