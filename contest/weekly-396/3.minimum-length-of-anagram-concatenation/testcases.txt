@@ -1,0 +1,14 @@
+input:
+"abba"
+output:
+2
+
+input:
+"cdef"
+output:
+4
+
+input:
+"pqqppqpqpq"
+output:
+2
