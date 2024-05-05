@@ -53,3 +53,10 @@ input:
 2
 output:
 90
+
+input:
+[59,35,37,50,64]
+14
+2
+output:
+80

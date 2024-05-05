@@ -41,29 +41,30 @@ class Solution:
 
         def f(a, s):
             if s & 1 == 0:
-                if a[-1] * 2 <= s:  # we can use all cost2
+                if a * 2 <= s:  # we can use all cost2
                     return s // 2 * cost2
                 else:
                     # a[-1] is too much, assume we use all cost1 for a[-1] -rest
                     # rather we need increase max, and we target is to make
                     # (a[-1] + x) * 2 <= s + n * x
                     #  x >= (2*a[-1] - s) // (n-2)
-                    rest = s - a[-1]
-                    return rest * cost2 + (a[-1] - rest) * cost1
+                    rest = s - a
+                    return rest * cost2 + (a - rest) * cost1
             else:
-                if a[-1] * 2 <= s + 1:  # we can use all cost2 and only 1 cost1
+                if a * 2 <= s + 1:  # we can use all cost2 and only 1 cost1
                     return s // 2 * cost2 + cost1
                 else:
                     # a[-1] is too much, assume we use all cost1
-                    rest = s - a[-1]
-                    return rest * cost2 + (a[-1] - rest) * cost1
+                    rest = s - a
+                    return rest * cost2 + (a - rest) * cost1
 
-        a = [mx - x for x in nums[::-1]]
-        s = sum(a)
+        s = sum(mx - x for x in nums[::-1])
+        a = mx - nums[0]
         res = f(a, s)
-        for _ in range(a[-1] + 1):
+        # why not end at 2 * a - s
+        for _ in range(a):
             s += n
-            a[-1] += 1
+            a += 1
             res = min(res, f(a, s))
         return res % mod
 
