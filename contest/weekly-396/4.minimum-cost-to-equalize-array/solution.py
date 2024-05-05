@@ -61,9 +61,9 @@ class Solution:
         a = [mx - x for x in nums[::-1]]
         s = sum(a)
         res = f(a, s)
-        while 2 * a[-1] > s:
+        for _ in range(a[-1] + 1):
             s += n
-            a = [x + 1 for x in a]
+            a[-1] += 1
             res = min(res, f(a, s))
         return res % mod
 
