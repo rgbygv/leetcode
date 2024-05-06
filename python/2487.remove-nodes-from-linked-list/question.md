@@ -1,35 +1,35 @@
-# [2487. 从链表中移除节点][link] (Medium)
+# [2487. Remove Nodes From Linked List][link] (Medium)
 
-[link]: https://leetcode.cn/problems/remove-nodes-from-linked-list/
+[link]: https://leetcode.com/problems/remove-nodes-from-linked-list/
 
-给你一个链表的头节点 `head` 。
+You are given the `head` of a linked list.
 
-移除每个右侧有一个更大数值的节点。
+Remove every node which has a node with a greater value anywhere to the right side of it.
 
-返回修改后链表的头节点 `head`。
+Return the  `head` of the modified linked list.
 
-**示例 1：**
+**Example 1:**
 
 ![](https://assets.leetcode.com/uploads/2022/10/02/drawio.png)
 
 ```
-输入：head = [5,2,13,3,8]
-输出：[13,8]
-解释：需要移除的节点是 5 ，2 和 3 。
-- 节点 13 在节点 5 右侧。
-- 节点 13 在节点 2 右侧。
-- 节点 8 在节点 3 右侧。
+Input: head = [5,2,13,3,8]
+Output: [13,8]
+Explanation: The nodes that should be removed are 5, 2 and 3.
+- Node 13 is to the right of node 5.
+- Node 13 is to the right of node 2.
+- Node 8 is to the right of node 3.
 ```
 
-**示例 2：**
+**Example 2:**
 
 ```
-输入：head = [1,1,1,1]
-输出：[1,1,1,1]
-解释：每个节点的值都是 1 ，所以没有需要移除的节点。
+Input: head = [1,1,1,1]
+Output: [1,1,1,1]
+Explanation: Every node has value 1, so no nodes are removed.
 ```
 
-**提示：**
+**Constraints:**
 
-- 给定列表中的节点数目在范围 `[1, 10⁵]` 内
+- The number of the nodes in the given list is in the range `[1, 10⁵]`.
 - `1 <= Node.val <= 10⁵`
