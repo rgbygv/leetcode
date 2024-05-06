@@ -143,6 +143,8 @@ Visual Studio Code + Neovim extension.
 
 - [1040. Moving Stones Until Consecutive II](https://leetcode.cn/problems/moving-stones-until-consecutive-ii/) (Medium)
 
+- [1353. Maximum Number of Events That Can Be Attended](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/) (Medium)
+
 - [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.cn/problems/minimum-non-zero-product-of-the-array-elements/)(Medium)
 
 - [2952. Minimum Number of Coins to be Added](https://leetcode.cn/problems/minimum-number-of-coins-to-be-added/) (Medium)
