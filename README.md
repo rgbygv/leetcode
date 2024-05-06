@@ -111,6 +111,8 @@ Visual Studio Code + Neovim extension.
 
 ### DP
 
+- [0741. Cherry Pickup](https://leetcode.cn/problems/cherry-pickup/) (Hard)
+
 - [0837. New 21 Game](https://leetcode.cn/problems/new-21-game/) (Medium)
 
 - [1049. Last Stone Weight II](https://leetcode.cn/problems/last-stone-weight-ii/) (Medium)
