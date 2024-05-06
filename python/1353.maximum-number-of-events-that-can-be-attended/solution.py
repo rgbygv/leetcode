@@ -27,7 +27,8 @@ class Solution:
         q = []
         res = 0
         i = 0
-        for t in range(1, 10**5 + 1):
+        t = 1
+        while i < n or q:
             while i < n and events[i][0] == t:
                 heappush(q, events[i][1])
                 i += 1
@@ -36,6 +37,7 @@ class Solution:
             if q:
                 res += 1
                 heappop(q)
+            t += 1
         return res
 
         return 0
