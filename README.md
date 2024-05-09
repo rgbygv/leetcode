@@ -80,6 +80,9 @@ Visual Studio Code + Neovim extension.
 - [LCP 24. 数字游戏](https://leetcode.cn/problems/5TxKeK/) (Hard)
 
 - [LCP 30. 魔塔游戏](https://leetcode.cn/problems/p0NxJO/) (Medium)
+### BFS
+
+- [1654. Minimum Jumps to Reach Home](https://leetcode.cn/problems/minimum-jumps-to-reach-home/) (Medium)
 
 ### Binary Search
 
