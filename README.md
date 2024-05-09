@@ -119,6 +119,8 @@ Visual Studio Code + Neovim extension.
 
 - [1621. Number of Sets of K Non-Overlapping Line Segments](https://leetcode.cn/problems/number-of-sets-of-k-non-overlapping-line-segments/) (Medium)
 
+- [1626. Best Team With No Conflicts](https://leetcode.cn/problems/best-team-with-no-conflicts/) (Medium)
+
 - [1883. Minimum Skips to Arrive at Meeting On Time](https://leetcode.cn/problems/minimum-skips-to-arrive-at-meeting-on-time/) (Hard)
 
 - [1976. 到达目的地的方案数](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
