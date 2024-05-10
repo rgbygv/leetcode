@@ -36,62 +36,68 @@ class Solution:
 
         # consider 0 .. i, if max(x,y) + limit < target: need 2
         # consider j .. n, if min(x,y) + 1 > target: need 2
-        n = len(nums)
-        diff = [0] * (2 * limit + 2)
-        i, j = 0, n - 1
+        # n = len(nums)
+        # diff = [0] * (2 * limit + 2)
+        # i, j = 0, n - 1
+        # while i < j:
+        #     x, y = sorted((nums[i], nums[j]))
+        #     # [2, 2 * limit] + 2
+        #     diff[2] += 2
+        #     diff[2 * limit + 1] -= 2
+
+        #     # [1+x, y+limit] + 1
+        #     diff[x + 1] += -1
+        #     diff[y + limit + 1] -= -1
+
+        #     # [x + y] + 0
+        #     diff[x + y] += -1
+        #     diff[x + y + 1] -= -1
+
+        #     i += 1
+        #     j -= 1
+
+        # res = inf
+        # d = 0
+        # for i in range(2, len(diff) - 1):
+        #     d += diff[i]
+        #     if d < res:
+        #         res = d
+        # return res
+
+        i = 0
+        j = len(nums) - 1
+        q = []
         while i < j:
-            x, y = sorted((nums[i], nums[j]))
-            # [2, 2 * limit] + 2
-            diff[2] += 2
-            diff[2 * limit + 1] -= 2
-
-            # [1+x, y+limit] + 1
-            diff[x + 1] += -1
-            diff[y + limit + 1] -= -1
-
-            # [x + y] + 0
-            diff[x + y] += -1
-            diff[x + y + 1] -= -1
-
+            q.append((nums[i] + nums[j], *sorted((nums[i], nums[j]))))
             i += 1
             j -= 1
-
-        res = inf
-        d = 0
-        for i in range(2, len(diff) - 1):
-            d += diff[i]
-            if d < res:
-                res = d
-        return res
+        q.sort()
 
         # this is wrong version, because sum maybe not in q
-
+        # so we enum target
         # the sum should in q
-        # res = inf
-        # n = len(q)
-        # i = 0
-        # pre = SortedList()
-        # suf = SortedList(mn for _, mn, _ in q)
-
-        # while i < n:
-        #     j = i
-        #     while j < n and q[j][0] == q[i][0]:
-        #         suf.remove(q[j][1])
-        #         j += 1
-        #     target, *_ = q[i]
-        #     cur = i + n - j
-        #     # 0..i..j..n
-        #     # consider 0 .. i, if max(x,y) + limit < target: need 2
-        #     cur += pre.bisect_left(target - limit)
-        #     # consider j .. n, if min(x,y) + 1 > target: need 2
-        #     cur += len(suf) - suf.bisect_right(target - 1)
-        #     ic(q, pre, suf, cur, target - limit, target - 1)
-        #     res = min(res, cur)
-        #     for k in range(i, j):
-        #         pre.add(q[k][2])
-        #     i = j
-
-        # return res
+        res = inf
+        n = len(q)
+        i = 0
+        pre = SortedList()
+        suf = SortedList(mn for _, mn, _ in q)
+        for target in range(q[0][0], q[-1][0] + 1):
+            j = i
+            while j < n and q[j][0] == target:
+                suf.remove(q[j][1])
+                j += 1
+            cur = i + n - j
+            # 0..i..j..n
+            # consider 0 .. i, if max(x,y) + limit < target: need 2
+            cur += pre.bisect_left(target - limit)
+            # consider j .. n, if min(x,y) + 1 > target: need 2
+            cur += len(suf) - suf.bisect_right(target - 1)
+            # ic(q, pre, suf, cur, target - limit, target - 1)
+            res = min(res, cur)
+            for k in range(i, j):
+                pre.add(q[k][2])
+            i = j
+        return res
 
 
 # @lc code=end
