@@ -112,6 +112,10 @@ Visual Studio Code + Neovim extension.
 
 - [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/) (Medium)
 
+### Diff Array
+
+- [1674. Minimum Moves to Make Array Complementary](https://leetcode.cn/problems/minimum-moves-to-make-array-complementary/) (Medium)
+
 ### DP
 
 - [0741. Cherry Pickup](https://leetcode.cn/problems/cherry-pickup/) (Hard)
