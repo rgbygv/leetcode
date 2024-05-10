@@ -17,13 +17,12 @@ impl Solution {
     pub fn minimum_distance(mut points: Vec<Vec<i32>>) -> i32 {
         points.sort_unstable();
         // the removed point must have max_x or max_y or min_x or min_y
-        let calc = |i: usize, j: usize| -> i32 {
-            let (x, y) = (&points[i], &points[j]);
+        // let calc = |i: usize, j: usize| -> i32 {
+        //     let (x, y) = (&points[i], &points[j]);
 
-            (x[0] - y[0]).abs() + (x[1] - y[1]).abs()
-        };
+        //     (x[0] - y[0]).abs() + (x[1] - y[1]).abs()
+        // };
 
-		
         // let (mut l, mut r) = (0, 2e8 as i32 + 1);
 
         // while l < r {
@@ -35,7 +34,7 @@ impl Solution {
 
         // }
 
-        // todo!()
+        todo!()
     }
 }
 
