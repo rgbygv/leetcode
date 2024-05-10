@@ -1,6 +1,6 @@
 # [786. K-th Smallest Prime Fraction][link] (Medium)
 
-[link]: https://leetcode.cn/problems/k-th-smallest-prime-fraction/
+[link]: https://leetcode.com/problems/k-th-smallest-prime-fraction/
 
 You are given a sorted integer array `arr` containing `1` and **prime** numbers, where all the
 integers of `arr` are unique. You are also given an integer `k`.
