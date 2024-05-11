@@ -33,8 +33,6 @@ Visual Studio Code + Neovim extension.
 
 - [1349. 参加考试的最大学生数](https://leetcode.cn/problems/maximum-students-taking-exam) (Hard)
 
-- [1686. 石子游戏 VI](https://leetcode.cn/problems/stone-game-vi/)(Medium)
-
 - [1690. 石子游戏 VII](https://leetcode.cn/problems/stone-game-vii/) (Medium)
 
 - [1901. 寻找峰值 II](https://leetcode.cn/problems/find-a-peak-element-ii) (Medium)
@@ -155,6 +153,8 @@ Visual Studio Code + Neovim extension.
 - [1040. Moving Stones Until Consecutive II](https://leetcode.cn/problems/moving-stones-until-consecutive-ii/) (Medium)
 
 - [1353. Maximum Number of Events That Can Be Attended](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/) (Medium)
+
+- [1686. Stone Game VI](https://leetcode.cn/problems/stone-game-vi/) (Medium)
 
 - [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.cn/problems/minimum-non-zero-product-of-the-array-elements/)(Medium)
 
