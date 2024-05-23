@@ -138,6 +138,8 @@ Visual Studio Code + Neovim extension.
 
 - [2518. Number of Great Partitions](https://leetcode.cn/problems/number-of-great-partitions/) (Hard)
 
+- [2597. The Number of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets/) (Medium)
+
 - [2684. 矩阵中移动的最大次数](https://leetcode.cn/problems/maximum-number-of-moves-in-a-grid/) (Medium)
 
 ### Graph
