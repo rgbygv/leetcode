@@ -86,6 +86,10 @@ Visual Studio Code + Neovim extension.
 
 - [0378. 有序矩阵中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) (Medium)
 
+### BackTrack
+
+- [1718. Construct the Lexicographically Largest Valid Sequence](https://leetcode.cn/problems/construct-the-lexicographically-largest-valid-sequence/) (Medium)
+
 ### Bit manipulation
 
 - [0898. Bitwise ORs of Subarrays](https://leetcode.cn/problems/bitwise-ors-of-subarrays/) (Medium)
