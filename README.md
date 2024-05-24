@@ -94,6 +94,8 @@ Visual Studio Code + Neovim extension.
 
 - [0898. Bitwise ORs of Subarrays](https://leetcode.cn/problems/bitwise-ors-of-subarrays/) (Medium)
 
+- [1734. Decode XORed Permutation](https://leetcode.cn/problems/decode-xored-permutation/) (Medium)
+
 - [1915. Number of Wonderful Substrings](https://leetcode.com/problems/number-of-wonderful-substrings/) (Medium)
 
 
