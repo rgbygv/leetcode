@@ -1,0 +1,17 @@
+input:
+"catsanddog"
+["cat","cats","and","sand","dog"]
+output:
+["cats and dog","cat sand dog"]
+
+input:
+"pineapplepenapple"
+["apple","pen","applepen","pine","pineapple"]
+output:
+["pine apple pen apple","pineapple pen apple","pine applepen apple"]
+
+input:
+"catsandog"
+["cats","dog","sand","and","cat"]
+output:
+[]
