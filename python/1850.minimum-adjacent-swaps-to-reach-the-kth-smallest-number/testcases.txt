@@ -1,0 +1,17 @@
+input:
+"5489355142"
+4
+output:
+2
+
+input:
+"11112"
+4
+output:
+4
+
+input:
+"00123"
+1
+output:
+1
