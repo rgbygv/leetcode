@@ -207,6 +207,8 @@ Visual Studio Code + Neovim extension.
 
 ### Sliding Window
 
+- [1888. Minimum Number of Flips to Make the Binary String Alternating](https://leetcode.cn/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) (Medium)
+
 - [2962. Count Subarrays Where Max Element Appears at Least K Times](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) (Medium)
 
 ### SortedList
