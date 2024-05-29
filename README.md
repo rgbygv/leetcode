@@ -192,6 +192,8 @@ Visual Studio Code + Neovim extension.
 
 ### Mono Stack
 
+- [1856. Maximum Subarray Min-Product](https://leetcode.cn/problems/maximum-subarray-min-product/) (Medium)
+
 - [2289. 使数组按非递减顺序排列](https://leetcode.cn/problems/steps-to-make-array-non-decreasing/)(Hard)
 
 ### Re rooting
