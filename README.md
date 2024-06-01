@@ -134,7 +134,7 @@ Visual Studio Code + Neovim extension.
 
 - [1883. Minimum Skips to Arrive at Meeting On Time](https://leetcode.cn/problems/minimum-skips-to-arrive-at-meeting-on-time/) (Hard)
 
-- [1976. 到达目的地的方案数](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
+- [1976. Number of Ways to Arrive at Destination](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/) (Medium)
 
 - [1997. First Day Where You Have Been in All the Rooms](https://leetcode.cn/problems/first-day-where-you-have-been-in-all-the-rooms/) (Medium)
 
