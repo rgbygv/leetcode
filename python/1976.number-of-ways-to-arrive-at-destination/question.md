@@ -1,42 +1,47 @@
-# [1976. 到达目的地的方案数][link] (Medium)
+# [1976. Number of Ways to Arrive at Destination][link] (Medium)
 
 [link]: https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination/
 
-你在一个城市里，城市由 `n` 个路口组成，路口编号为 `0` 到 `n - 1` ，某些路口之间有 **双向** 道路。输
-入保证你可以从任意路口出发到达其他任意路口，且任意两个路口之间最多有一条路。
+You are in a city that consists of `n` intersections numbered from `0` to `n - 1` with **bi-
+directional** roads between some intersections. The inputs are generated such that you can reach any
+intersection from any other intersection and that there is at most one road between any two
+intersections.
 
-给你一个整数 `n` 和二维整数数组 `roads` ，其中 `roads[i] = [uᵢ, vᵢ, timeᵢ]` 表示在路口 `uᵢ` 和 `vᵢ` 
-之间有一条需要花费 `timeᵢ` 时间才能通过的道路。你想知道花费 **最少时间** 从路口 `0` 出发到达路口 `n 
-- 1` 的方案数。
+You are given an integer `n` and a 2D integer array `roads` where `roads[i] = [uᵢ, vᵢ, timeᵢ]` means
+that there is a road between intersections `uᵢ` and `vᵢ` that takes `timeᵢ` minutes to travel. You
+want to know in how many ways you can travel from intersection `0` to intersection `n - 1` in the
+**shortest amount of time**.
 
-请返回花费 **最少时间** 到达目的地的 **路径数目** 。由于答案可能很大，将结果对 `10⁹ + 7` **取余** 后
-返回。
+Return the **number of ways** you can arrive at your destination in the **shortest amount of time**.
+Since the answer may be large, return it **modulo** `10⁹ + 7`.
 
-**示例 1：**
+**Example 1:**
 
 ![](https://assets.leetcode.com/uploads/2021/07/17/graph2.png)
 
 ```
-输入：n = 7, roads = [[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2
-]]
-输出：4
-解释：从路口 0 出发到路口 6 花费的最少时间是 7 分钟。
-四条花费 7 分钟的路径分别为：
+Input: n = 7, roads =
+[[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]
+Output: 4
+Explanation: The shortest amount of time it takes to go from intersection 0 to intersection 6 is 7
+minutes.
+The four ways to get there in 7 minutes are:
 - 0 ➝ 6
 - 0 ➝ 4 ➝ 6
 - 0 ➝ 1 ➝ 2 ➝ 5 ➝ 6
 - 0 ➝ 1 ➝ 3 ➝ 5 ➝ 6
 ```
 
-**示例 2：**
+**Example 2:**
 
 ```
-输入：n = 2, roads = [[1,0,10]]
-输出：1
-解释：只有一条从路口 0 到路口 1 的路，花费 10 分钟。
+Input: n = 2, roads = [[1,0,10]]
+Output: 1
+Explanation: There is only one way to go from intersection 0 to intersection 1, and it takes 10
+minutes.
 ```
 
-**提示：**
+**Constraints:**
 
 - `1 <= n <= 200`
 - `n - 1 <= roads.length <= n * (n - 1) / 2`
@@ -44,5 +49,5 @@
 - `0 <= uᵢ, vᵢ <= n - 1`
 - `1 <= timeᵢ <= 10⁹`
 - `uᵢ != vᵢ`
-- 任意两个路口之间至多有一条路。
-- 从任意路口出发，你能够到达其他任意路口。
+- There is at most one road connecting any two intersections.
+- You can reach any intersection from any other intersection.
