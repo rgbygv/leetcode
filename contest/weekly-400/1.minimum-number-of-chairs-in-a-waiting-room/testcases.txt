@@ -1,0 +1,14 @@
+input:
+"EEEEEEE"
+output:
+7
+
+input:
+"ELELEEL"
+output:
+2
+
+input:
+"ELEELEELLL"
+output:
+3
