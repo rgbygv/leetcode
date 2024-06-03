@@ -1,0 +1,14 @@
+input:
+"???"
+output:
+"abc"
+
+input:
+"a?a?"
+output:
+"abac"
+
+input:
+"abcdefghijklmnopqrstuvwxy??"
+output:
+"abcdefghijklmnopqrstuvwxyaz"
