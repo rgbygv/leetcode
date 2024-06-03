@@ -1,0 +1,17 @@
+input:
+"coaching"
+"coding"
+output:
+4
+
+input:
+"abcde"
+"a"
+output:
+0
+
+input:
+"z"
+"abcde"
+output:
+5
