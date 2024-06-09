@@ -125,6 +125,8 @@ Visual Studio Code + Neovim extension.
 
 ### DP
 
+- [0312. Burst Balloons](https://leetcode.cn/problems/burst-balloons/) (Hard)
+
 - [0741. Cherry Pickup](https://leetcode.cn/problems/cherry-pickup/) (Hard)
 
 - [0837. New 21 Game](https://leetcode.cn/problems/new-21-game/) (Medium)
