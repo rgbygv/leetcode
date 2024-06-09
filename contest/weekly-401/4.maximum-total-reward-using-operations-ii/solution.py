@@ -29,6 +29,10 @@ class Solution:
         - `1 <= rewardValues[i] <= 5 * 10⁴`
         """
         a = sorted(set(rewardValues))
+        f = 1
+        for x in a:
+            f |= (f & ((1 << x) - 1)) << x
+        return f.bit_length() - 1
         mx = 2 * a[-1]
         can = set([0])
         ban = SortedList(range(1, mx))
