@@ -1,0 +1,14 @@
+input:
+9
+output:
+90
+
+input:
+15
+output:
+80
+
+input:
+11
+output:
+90
