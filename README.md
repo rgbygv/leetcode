@@ -105,6 +105,8 @@ Visual Studio Code + Neovim extension.
 
 - [1969. Minimum Non-Zero Product of the Array Elements](https://leetcode.cn/problems/minimum-non-zero-product-of-the-array-elements/)(Medium)
 
+= [2813. Maximum Elegance of a K-Length Subsequence](https://leetcode.cn/problems/maximum-elegance-of-a-k-length-subsequence/) (Hard)
+
 - [2952. Minimum Number of Coins to be Added](https://leetcode.cn/problems/minimum-number-of-coins-to-be-added/) (Medium)
 
 ### Heap
